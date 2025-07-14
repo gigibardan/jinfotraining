@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curs Administrator de Pensiune Turistică autorizat - J'Info Training. 4 luni, 1.700 lei. Învață organizarea, promovarea, rezervările și marketingul pensiunilor.">
+    <meta name="keywords" content="administrator pensiune turistica bucuresti, curs pensiune turistica, management pensiune, certificat autorizat pensiune">
+    <meta name="author" content="J'Info Training">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Curs Administrator de Pensiune Turistică - J'Info Training">
+    <meta property="og:description" content="Devino administrator de pensiune turistică în 4 luni. Învață organizarea, promovarea, managementul rezervărilor și marketingul pentru pensiuni de succes.">
+    <meta property="og:image" content="../assets/images/cursuri/administrator-de-pensiune-turistica.avif">
+    <meta property="og:url" content="https://jinfotraining.ro/cursuri/administrator-pensiune-turistica">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/cursuri/faviconjinfotraining.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <title>Curs Administrator Pensiune Turistică Autorizat - J'Info Training</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../" class="nav-logo-link">
+                <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="nav-logo">
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../" class="nav-link">Acasa</a></li>
+                <li><a href="../cursuri.html" class="nav-link">Cursuri</a></li>
+                <li><a href="../pachete.html" class="nav-link">Pachete</a></li>
+                <li><a href="../lectori.html" class="nav-link">Lectori</a></li>
+                <li><a href="../about.html" class="nav-link">Despre noi</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Course Hero Section -->
+    <section class="course-hero">
+        <div class="hero-background">
+            <img src="../../assets/images/cursuri/imghero-administrator-pensiune-turistica.avif" alt="Administrator de Pensiune Turistică" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                    </svg>
+                    Management pensiuni
+                </div>
+                
+                <h1 class="course-hero-title">Administrator de Pensiune Turistică</h1>
+                <p class="course-hero-subtitle">
+                    Transformă-ți pasiunea pentru ospitalitate într-o afacere de succes. Învață să administrezi eficient o pensiune turistică, 
+                    de la organizarea operațiunilor zilnice până la strategiile de marketing și dezvoltarea unei experiențe memorabile pentru oaspeți.
+                </p>
+                
+                <div class="course-hero-meta">
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                        <span>4 luni</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                        <span>1.700 lei</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                        </svg>
+                        <span>Ospitalitate</span>
+                    </div>
+                </div>
+
+                <div class="course-hero-actions">
+                    <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                        Înscrie-te acum
+                    </button>
+                    <a href="../contact.html" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                        </svg>
+                        Solicită detalii
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="../cursuri.html" class="back-to-courses">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+            </svg>
+            Înapoi la cursuri
+        </a>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-description section">
+        <div class="container">
+            <div class="description-grid">
+                <div class="description-main">
+                    <h2>Despre cursul de Administrator de Pensiune Turistică</h2>
+                    <p class="lead-text">
+                        Cursul de Administrator de Pensiune Turistică este conceput pentru antreprenorii și profesioniștii 
+                        care vor să exceleze în managementul unităților mici de cazare. Acest program practic de 4 luni 
+                        îți oferă toate cunoștințele necesare pentru a administra cu succes o pensiune turistică prosperă.
+                    </p>
+                    
+                    <p>
+                        Vei învăța să organizezi și să promovezi eficient pensiunea ta, să gestionezi rezervările și cazarea 
+                        oaspeților, să optimizezi aspectele economice și să implementezi strategii de marketing care să atragă 
+                        și să fidelizeze clienții. Programul acoperă toate aspectele practice ale administrării unei pensiuni: 
+                        de la pregătirea camerelor și serviciilor de primire, până la comunicarea cu oaspeții și dezvoltarea 
+                        unei reputații excelente în comunitatea locală.
+                    </p>
+                    
+                    <p>
+                        Cursul pune accent pe ospitalitatea autentică și pe crearea unei experiențe personalizate pentru fiecare 
+                        oaspete. Vei dobândi competențe în managementul calității serviciilor, optimizarea costurilor, 
+                        implementarea standardelor de siguranță și igienă, și dezvoltarea unei culturi organizaționale 
+                        care să reflecte valorile ospitalității românești tradiționale, adaptate la cerințele moderne.
+                    </p>
+                    
+                    <p>
+                        La finalul programului, vei fi pregătit să administrezi cu încredere o pensiune turistică, să dezvolți 
+                        strategii de creștere sustenabilă și să construiești o afacere profitabilă în sectorul turismului rural și urban.
+                    </p>
+                </div>
+                
+                <div class="description-sidebar">
+                    <div class="course-highlights">
+                        <h3>Avantajele cursului</h3>
+                        <ul class="highlights-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Focus pe unități mici de cazare
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Ospitalitate personalizată
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Marketing pentru pensiuni
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Aspecte economice practice
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Preț accesibil pentru antreprenori
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Rețea de proprietari de pensiuni
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-details">
+                        <h3>Detalii curs</h3>
+                        <div class="detail-item">
+                            <span class="detail-label">Durata:</span>
+                            <span class="detail-value">4 luni</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preț:</span>
+                            <span class="detail-value">1.700 lei</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Plată:</span>
+                            <span class="detail-value">Integral sau în rate</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Certificat:</span>
+                            <span class="detail-value">Autorizat MEN</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Nivel:</span>
+                            <span class="detail-value">Antreprenorial</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Format:</span>
+                            <span class="detail-value">Practic + studii de caz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum section">
+        <div class="container">
+            <h2 class="section-title">Curriculumul administratorului de pensiune</h2>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                        </svg>
+                    </div>
+                    <h3>Organizarea pensiunii</h3>
+                    <p>Planificarea spațiilor, amenajarea camerelor, organizarea serviciilor comune și optimizarea fluxurilor de circulație pentru confortul oaspeților.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17,8H20A1,1 0 0,1 21,9V11A1,1 0 0,1 20,12H17V21A1,1 0 0,1 16,22H8A1,1 0 0,1 7,21V12H4A1,1 0 0,1 3,11V9A1,1 0 0,1 4,8H7V6A6,6 0 0,1 13,0A6,6 0 0,1 19,6V8H17M12,2A4,4 0 0,0 8,6V8H16V6A4,4 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Promovarea și marketing</h3>
+                    <p>Strategii de promovare online și offline, marketing digital pentru pensiuni, dezvoltarea brandului local și utilizarea platformelor de booking.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,1V3H15V1H17V3H21A2,2 0 0,1 23,5V19A2,2 0 0,1 21,21H3A2,2 0 0,1 1,19V5A2,2 0 0,1 3,3H7V1H9M21,8.5H3V19H21V8.5M6,13V15.5H4V13H6M10,13V15.5H8V13H10M14,13V15.5H12V13H14M18,13V15.5H16V13H18Z"/>
+                        </svg>
+                    </div>
+                    <h3>Rezervări și cazare</h3>
+                    <p>Managementul rezervărilor, procesul de check-in/check-out, organizarea programului de curățenie și menținerea standardelor de calitate.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
+                        </svg>
+                    </div>
+                    <h3>Aspecte economice</h3>
+                    <p>Calculul costurilor operaționale, stabilirea prețurilor competitive, optimizarea profitabilității și gestionarea bugetului pensiunii.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                        </svg>
+                    </div>
+                    <h3>Comunicarea cu oaspeții</h3>
+                    <p>Tehnici de comunicare eficientă, gestionarea cererilor speciale, rezolvarea problemelor și dezvoltarea relațiilor pe termen lung cu clienții.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                        </svg>
+                    </div>
+                    <h3>Servicii și experiențe</h3>
+                    <p>Dezvoltarea serviciilor suplimentare, crearea experiențelor locale autentice și personalizarea sejurului pentru diferite tipuri de oaspeți.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
+                        </svg>
+                    </div>
+                    <h3>Legislație și standarde</h3>
+                    <p>Reglementări pentru pensiuni turistice, certificări necesare, standarde de siguranță și igienă, și aspecte juridice ale ospitalității.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M5,9V20H19V9A5,5 0 0,0 14,4H10A5,5 0 0,0 5,9Z"/>
+                        </svg>
+                    </div>
+                    <h3>Sustenabilitate și mediu</h3>
+                    <p>Turismul responsabil în pensiuni, practici ecologice, reducerea impactului asupra mediului și promovarea turismului sustenabil local.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitality Excellence Section -->
+    <section class="hospitality-excellence section">
+        <div class="container">
+            <h2 class="section-title">Excelența în ospitalitate</h2>
+            <div class="excellence-content">
+                <div class="excellence-intro">
+                    <p class="lead-text">
+                        Ospitalitatea autentică este inima unei pensiuni de succes. Învață să creezi experiențe memorabile 
+                        care transformă oaspeții ocazionali în ambasadori ai pensiunii tale.
+                    </p>
+                </div>
+                
+                <div class="excellence-pillars">
+                    <div class="pillar-item">
+                        <div class="pillar-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                            </svg>
+                        </div>
+                        <h3>Experiență personalizată</h3>
+                        <p>Fiecare oaspete este unic. Învață să adaptezi serviciile și să anticipezi nevoile pentru a oferi o experiență pe măsură.</p>
+                        <ul class="pillar-features">
+                            <li>Profilarea preferințelor oaspeților</li>
+                            <li>Servicii personalizate</li>
+                            <li>Atenție la detalii</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pillar-item">
+                        <div class="pillar-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                            </svg>
+                        </div>
+                        <h3>Atmosfera casei</h3>
+                        <p>Creează o atmosferă caldă și primitoare care să facă oaspeții să se simtă ca acasă, departe de casa lor.</p>
+                        <ul class="pillar-features">
+                            <li>Design interior primitor</li>
+                            <li>Ambianță relaxantă</li>
+                            <li>Spații comune confortabile</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pillar-item">
+                        <div class="pillar-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,13 12,18.71 12,18.71C12,18.71 17,13 17,9A5,5 0 0,0 12,4Z"/>
+                            </svg>
+                        </div>
+                        <h3>Conectarea cu zona locală</h3>
+                        <p>Ajută oaspeții să descopere comunitățile locale și să trăiască experiențe autentice în zona pensiunii.</p>
+                        <ul class="pillar-features">
+                            <li>Recomandări locale personalizate</li>
+                            <li>Parteneriate cu comercianții locali</li>
+                            <li>Activități în comunitate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Aspects Section -->
+    <section class="business-aspects section">
+        <div class="container">
+            <h2 class="section-title">Aspectele de business</h2>
+            <div class="business-grid">
+                <div class="business-category">
+                    <div class="category-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"/>
+                        </svg>
+                    </div>
+                    <h3>Optimizarea veniturilor</h3>
+                    <ul class="business-list">
+                        <li>Strategii de pricing dinamic</li>
+                        <li>Maximizarea ocupării</li>
+                        <li>Servicii suplimentare profitabile</li>
+                        <li>Pachete și oferte speciale</li>
+                    </ul>
+                </div>
+                
+                <div class="business-category">
+                    <div class="category-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17,8H20A1,1 0 0,1 21,9V11A1,1 0 0,1 20,12H17V21A1,1 0 0,1 16,22H8A1,1 0 0,1 7,21V12H4A1,1 0 0,1 3,11V9A1,1 0 0,1 4,8H7V6A6,6 0 0,1 13,0A6,6 0 0,1 19,6V8H17M12,2A4,4 0 0,0 8,6V8H16V6A4,4 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Marketing digital eficient</h3>
+                    <ul class="business-list">
+                        <li>Prezența online profesională</li>
+                        <li>Gestionarea review-urilor</li>
+                       <li>Social media pentru pensiuni</li>
+                       <li>SEO local și Google My Business</li>
+                   </ul>
+               </div>
+               
+               <div class="business-category">
+                   <div class="category-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
+                       </svg>
+                   </div>
+                   <h3>Controlul costurilor</h3>
+                   <ul class="business-list">
+                       <li>Monitorizarea cheltuielilor operaționale</li>
+                       <li>Eficiență energetică</li>
+                       <li>Optimizarea aprovizionării</li>
+                       <li>Managementul personalului</li>
+                   </ul>
+               </div>
+               
+               <div class="business-category">
+                   <div class="category-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                       </svg>
+                   </div>
+                   <h3>Fidelizarea clienților</h3>
+                   <ul class="business-list">
+                       <li>Programe de loialitate</li>
+                       <li>Follow-up post-sejur</li>
+                       <li>Recomandări și referrals</li>
+                       <li>Oferirea de experiențe unice</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Requirements Section -->
+   <section class="requirements section">
+       <div class="container">
+           <div class="requirements-content">
+               <h2>Cerințe de participare</h2>
+               <div class="requirements-grid">
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                       </svg>
+                       <div>
+                           <h3>Vârsta și educație</h3>
+                           <p>Minim 18 ani și școala generală finalizată, preferabil experiență în ospitalitate</p>
+                       </div>
+                   </div>
+                   
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                       </svg>
+                       <div>
+                           <h3>Pasiune pentru ospitalitate</h3>
+                           <p>Dorința de a oferi servicii de calitate și de a crea experiențe plăcute pentru oaspeți</p>
+                       </div>
+                   </div>
+                   
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                       </svg>
+                       <div>
+                           <h3>Orientare antreprenorială</h3>
+                           <p>Dorința de a dezvolta sau administra o afacere în domeniul ospitalității</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="certificate-info">
+                   <h3>Certificarea pentru administrarea pensiunilor</h3>
+                   <p>
+                       La finalizarea cu succes a cursului, participanții vor primi <strong>certificat de calificare de Administrator de Pensiune Turistică</strong> 
+                       cu recunoaștere națională, autorizat de Ministerul Educației. Acest certificat îți permite să administrezi 
+                       legal pensiuni turistice, să îți deschizi propria afacere de ospitalitate sau să lucrezi pentru proprietarii 
+                       de pensiuni ca administrator profesionist. Certificatul este recunoscut pe teritoriul României și îndeplinește 
+                       toate cerințele legale pentru operarea în sectorul turismului rural și urban.
+                   </p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Career Paths Section -->
+   <section class="career-paths section">
+       <div class="container">
+           <h2 class="section-title">Oportunități de carieră</h2>
+           <div class="career-paths-grid">
+               <div class="career-path-item">
+                   <div class="career-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                       </svg>
+                   </div>
+                   <h3>Proprietar de pensiune</h3>
+                   <p>Dezvoltarea și administrarea propriei pensiuni turistice cu toate competențele necesare pentru succes.</p>
+                   <span class="salary-info">3.000 - 12.000 lei/lună</span>
+               </div>
+               
+               <div class="career-path-item">
+                   <div class="career-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                       </svg>
+                   </div>
+                   <h3>Administrator profesionist</h3>
+                   <p>Gestionarea operațiunilor pentru proprietarii de pensiuni care doresc servicii profesionale de management.</p>
+                   <span class="salary-info">2.500 - 5.500 lei/lună</span>
+               </div>
+               
+               <div class="career-path-item">
+                   <div class="career-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M17,8H20A1,1 0 0,1 21,9V11A1,1 0 0,1 20,12H17V21A1,1 0 0,1 16,22H8A1,1 0 0,1 7,21V12H4A1,1 0 0,1 3,11V9A1,1 0 0,1 4,8H7V6A6,6 0 0,1 13,0A6,6 0 0,1 19,6V8H17M12,2A4,4 0 0,0 8,6V8H16V6A4,4 0 0,0 12,2Z"/>
+                       </svg>
+                   </div>
+                   <h3>Consultant în ospitalitate</h3>
+                   <p>Consultanță pentru dezvoltarea și optimizarea pensiunilor, training pentru personal și implementarea best practices.</p>
+                   <span class="salary-info">3.500 - 8.000 lei/lună</span>
+               </div>
+               
+               <div class="career-path-item">
+                   <div class="career-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                       </svg>
+                   </div>
+                   <h3>Manager turism rural</h3>
+                   <p>Coordonarea și dezvoltarea rețelelor de pensiuni în destinații turistice rurale și de agrement.</p>
+                   <span class="salary-info">4.000 - 7.500 lei/lună</span>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- CTA Final Section -->
+   <section class="cta-final section">
+       <div class="container">
+           <div class="cta-final-content">
+               <h2>Transformă-ți pasiunea pentru ospitalitate în afacere!</h2>
+               <p>
+                   Alătură-te comunității antreprenorilor din ospitalitate care au ales să exceleze în administrarea pensiunilor turistice. 
+                   Cursul nostru îți oferă toate instrumentele pentru a construi o afacere prosperă și sustenabilă.
+               </p>
+               
+               <div class="cta-actions">
+                   <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                       </svg>
+                       Înscrie-te la curs
+                   </button>
+                   <a href="../contact.html" class="btn btn-primary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                       </svg>
+                       Sună pentru detalii
+                   </a>
+               </div>
+               
+               <div class="trust-indicators">
+                   <div class="trust-item">
+                       <span class="trust-number">4</span>
+                       <span class="trust-label">Luni practice</span>
+                   </div>
+                   <div class="trust-item">
+                       <span class="trust-number">200+</span>
+                       <span class="trust-label">Pensiuni administrate</span>
+                   </div>
+                   <div class="trust-item">
+                       <span class="trust-number">90%</span>
+                       <span class="trust-label">Deschid afacerea proprie</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="container">
+           <div class="footer-content">
+               <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="footer-logo">
+               <p class="footer-text">
+                   Centru de formare profesională în domeniul turismului cu peste 20 de ani de experiență. 
+                   Cursuri autorizate cu certificate recunoscute la nivel național.
+               </p>
+               
+               <div class="footer-partners">
+                   <a href="http://www.anc.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="ANC - Autoritatea Națională pentru Calificări">
+                       <img src="../../assets/images/cursuri/ANC.avif" alt="ANC Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Educației">
+                       <img src="../../assets/images/cursuri/MEN_2.avif" alt="Ministerul Educației Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.mmuncii.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Muncii și Justiției Sociale">
+                       <img src="../../assets/images/cursuri/MMJS_1.avif" alt="Ministerul Muncii Logo" class="partner-logo">
+                   </a>
+                   <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener" class="partner-link" title="ANPC SOL">
+                       <img src="../../assets/images/cursuri/anpcsol.avif" alt="ANPC SOL Logo" class="partner-logo">
+                   </a>
+                   <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener" class="partner-link" title="ANPC SAL">
+                       <img src="../../assets/images/cursuri/anpcsal.avif" alt="ANPC SAL Logo" class="partner-logo">
+                   </a>
+               </div>
+           </div>
+           
+           <div class="footer-bottom">
+               <p>&copy; 2025 J'Info Training. Toate drepturile rezervate. | Dezvoltat cu ❤️ pentru educația în turism</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../../js/main.js"></script>
+   <script src="../../js/forms.js"></script>
+   
+   <!-- Course Page Specific Scripts -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           initCoursePageFunctionality();
+       });
+
+       function initCoursePageFunctionality() {
+           // Smooth scroll for hero CTA
+           const heroActions = document.querySelectorAll('.course-hero-actions .btn');
+           heroActions.forEach(btn => {
+               if (btn.onclick) return; // Skip if already has onclick
+               
+               btn.addEventListener('click', function(e) {
+                   if (this.textContent.includes('Înscrie-te')) {
+                       e.preventDefault();
+                       openInscriereModal();
+                   }
+               });
+           });
+           
+           // Animate trust indicators on scroll
+           const trustIndicators = document.querySelectorAll('.trust-number');
+           const observerOptions = {
+               threshold: 0.5,
+               rootMargin: '0px'
+           };
+           
+           const observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                   if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                       entry.target.classList.add('animated');
+                       animateNumber(entry.target);
+                   }
+               });
+           }, observerOptions);
+           
+           trustIndicators.forEach(indicator => observer.observe(indicator));
+       }
+
+       function animateNumber(element) {
+           const target = element.textContent;
+           const isPercentage = target.includes('%');
+           const targetNum = parseInt(target.replace(/\D/g, ''));
+           let current = 0;
+           const increment = targetNum / 50; // 50 frames
+           
+           const timer = setInterval(() => {
+               current += increment;
+               if (current >= targetNum) {
+                   current = targetNum;
+                   clearInterval(timer);
+               }
+               
+               element.textContent = Math.floor(current) + (isPercentage ? '%' : '');
+           }, 30);
+       }
+
+       function openInscriereModal() {
+           // Create modal if it doesn't exist
+           let modal = document.getElementById('course-inscriere-modal');
+           if (!modal) {
+               modal = createCourseInscriereModal();
+               document.body.appendChild(modal);
+           }
+
+           // Pre-select Administrator de Pensiune Turistică
+           const courseSelect = modal.querySelector('select[name="curs"]');
+           if (courseSelect) {
+               courseSelect.value = 'administrator-pensiune-turistica';
+               // Trigger change event to update price
+               courseSelect.dispatchEvent(new Event('change'));
+           }
+
+           // Show modal
+           modal.style.display = 'flex';
+           document.body.style.overflow = 'hidden';
+       }
+
+       function createCourseInscriereModal() {
+           const modal = document.createElement('div');
+           modal.id = 'course-inscriere-modal';
+           modal.className = 'modal';
+           modal.innerHTML = `
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h3>Înscriere - Administrator Pensiune Turistică</h3>
+                       <button class="modal-close" data-close="course-inscriere-modal">&times;</button>
+                   </div>
+                   <div class="modal-body">
+                       <form id="course-inscriere-form">
+                           <div class="form-group">
+                               <label for="curs-nume">Nume complet *</label>
+                               <input type="text" id="curs-nume" name="nume" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-email">Email *</label>
+                               <input type="email" id="curs-email" name="email" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-telefon">Telefon *</label>
+                               <input type="tel" id="curs-telefon" name="telefon" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-selectat">Cursul selectat *</label>
+                               <select id="curs-selectat" name="curs" required>
+                                   <option value="">Alege cursul...</option>
+                                   <option value="administrator-pensiune-turistica" selected>Administrator de Pensiune Turistică (1.700 lei)</option>
+                                   <option value="ghid-national-touroperator">Ghid național touroperator (1.700 lei)</option>
+                                   <option value="agent-turism">Agent de turism (2.150 lei)</option>
+                                   <option value="ghid-turism">Ghid de turism (2.150 lei)</option>
+                                   <option value="director-agentie-turism">Director de Agenție de turism (2.850 lei)</option>
+                                   <option value="director-hotel">Director de hotel (2.850 lei)</option>
+                                   <option value="formator-autorizat">Formator autorizat (1.350 lei)</option>
+                               </select>
+                               <div id="course-price-display" style="display: block; margin-top: 0.5rem; color: var(--primary-orange); font-weight: 600;">Preț: 1.700 Lei</div>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-experienta">Experiența în ospitalitate</label>
+                               <select id="curs-experienta" name="experienta">
+                                   <option value="">Alege...</option>
+                                   <option value="fara-experienta">Fără experiență</option>
+                                   <option value="experienta-hotel">Experiență în hotel/pensiune</option>
+                                   <option value="experienta-restaurant">Experiență în restaurant/catering</option>
+                                   <option value="proprietar-actual">Proprietar pensiune/B&B</option>
+                                   <option value="manager-ospitalitate">Manager în ospitalitate</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-obiective">Obiectivele tale</label>
+                               <select id="curs-obiective" name="obiective">
+                                   <option value="">Alege...</option>
+                                   <option value="proprie-pensiune">Deschiderea propriei pensiuni</option>
+                                   <option value="administrator-profesionist">Administrator profesionist pentru alții</option>
+                                   <option value="consultant-ospitalitate">Consultant în ospitalitate</option>
+                                   <option value="manager-turism-rural">Manager turism rural</option>
+                                   <option value="imbunatatire-business">Îmbunătățirea afacerii existente</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-locatie">Zona de interes</label>
+                               <select id="curs-locatie" name="zona_interes">
+                                   <option value="">Alege...</option>
+                                   <option value="bucuresti-ilfov">București - Ilfov</option>
+                                   <option value="munte-prahova">Zona montană (Prahova, Brașov)</option>
+                                   <option value="delta-litoral">Delta Dunării / Litoral</option>
+                                   <option value="transilvania">Transilvania</option>
+                                   <option value="maramures-bucovina">Maramureș - Bucovina</option>
+                                   <option value="oltenia-muntenia">Oltenia - Muntenia</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-data">Data preferată de începere</label>
+                               <select id="curs-data" name="data_preferata">
+                                   <option value="">Alege...</option>
+                                   <option value="cat-mai-repede">Cât mai repede posibil</option>
+                                   <option value="1-2-saptamani">În 1-2 săptămâni</option>
+                                   <option value="luna-viitoare">Luna viitoare</option>
+                                   <option value="peste-2-luni">Peste 2 luni</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-mesaj">Viziunea ta pentru ospitalitate (opțional)</label>
+                               <textarea id="curs-mesaj" name="mesaj" rows="3" placeholder="Ce tip de experiență vrei să oferi oaspeților? Ce te motivează în ospitalitate?"></textarea>
+                           </div>
+                           
+                           <div class="form-actions">
+                               <button type="submit" class="btn btn-primary">
+                                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                       <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                                   </svg>
+                                   Trimite înscriere
+                               </button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           `;
+
+           // Add event listeners
+           const closeBtn = modal.querySelector('.modal-close');
+           closeBtn.addEventListener('click', () => closeCourseModal(modal));
+           
+           modal.addEventListener('click', (e) => {
+               if (e.target === modal) {
+                   closeCourseModal(modal);
+               }
+           });
+
+           // Add form submission handler
+           const form = modal.querySelector('#course-inscriere-form');
+           form.addEventListener('submit', handleCourseInscriereSubmit);
+
+           // Add course price update
+           const courseSelect = modal.querySelector('#curs-selectat');
+           courseSelect.addEventListener('change', updateCoursePriceDisplay);
+
+           return modal;
+       }
+
+       function closeCourseModal(modal) {
+           modal.style.display = 'none';
+           document.body.style.overflow = '';
+       }
+
+       function updateCoursePriceDisplay() {
+           const priceDisplay = document.getElementById('course-price-display');
+           const prices = {
+               'administrator-pensiune-turistica': '1.700 Lei',
+               'ghid-national-touroperator': '1.700 Lei',
+               'agent-turism': '2.150 Lei',
+               'ghid-turism': '2.150 Lei',
+               'director-agentie-turism': '2.850 Lei',
+               'director-hotel': '2.850 Lei',
+               'formator-autorizat': '1.350 Lei'
+           };
+           
+           const selectedPrice = prices[this.value];
+           if (selectedPrice) {
+               priceDisplay.textContent = `Preț: ${selectedPrice}`;
+               priceDisplay.style.display = 'block';
+           } else {
+               priceDisplay.style.display = 'none';
+           }
+       }
+
+       async function handleCourseInscriereSubmit(e) {
+           e.preventDefault();
+           
+           const form = e.target;
+           const submitBtn = form.querySelector('button[type="submit"]');
+           const originalHTML = submitBtn.innerHTML;
+           
+           try {
+               // Show loading
+               submitBtn.disabled = true;
+               submitBtn.innerHTML = `
+                   <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
+                   </svg>
+                   Se trimite...
+               `;
+               
+               // Get form data
+               const formData = new FormData(form);
+               const data = Object.fromEntries(formData.entries());
+               
+               // Send via EmailJS (replace with your actual service/template IDs)
+               await emailjs.send('service_tcy7j6c', 'template_n4vdpoi', {
+                   from_name: data.nume,
+                   from_email: data.email,
+                   phone: data.telefon,
+                   course: 'Administrator de Pensiune Turistică',
+                   experienta: data.experienta || 'Nu a specificat',
+                   obiective: data.obiective || 'Nu a specificat',
+                   zona_interes: data.zona_interes || 'Nu a specificat',
+                   data_preferata: data.data_preferata || 'Nu a specificat',
+                   message: data.mesaj || 'Înscriere din pagina Administrator de Pensiune Turistică',
+                   form_type: 'course-inscriere-administrator-pensiune-turistica'
+               });
+               
+               // Success
+showSuccessModal('Administrator de Pensiune Turistică');
+               form.reset();
+               closeCourseModal(document.getElementById('course-inscriere-modal'));
+               
+           } catch (error) {
+               console.error('Course inscription error:', error);
+               alert('A apărut o eroare. Vă rugăm să încercați din nou sau să ne contactați telefonic.');
+           } finally {
+               submitBtn.disabled = false;
+               submitBtn.innerHTML = originalHTML;
+           }
+       }
+   </script>
+</body>
+</html>
+                        

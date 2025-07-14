@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curs Formator autorizat - J'Info Training. 5 săptămâni, 1.350 lei. Învață comunicare, planificare training, evaluare și tehnici de predare moderne.">
+    <meta name="keywords" content="formator autorizat bucuresti, curs formator, training skills, certificat formator, tehnici predare">
+    <meta name="author" content="J'Info Training">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Curs Formator autorizat - J'Info Training">
+    <meta property="og:description" content="Devino formator autorizat în 5 săptămâni. Învață tehnici moderne de predare, comunicare eficientă și planificarea sesiunilor de training profesionale.">
+    <meta property="og:image" content="../assets/images/cursuri/formator-autorizat.avif">
+    <meta property="og:url" content="https://jinfotraining.ro/cursuri/formator-autorizat">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/cursuri/faviconjinfotraining.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <title>Curs Formator autorizat - J'Info Training</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../" class="nav-logo-link">
+                <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="nav-logo">
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../" class="nav-link">Acasa</a></li>
+                <li><a href="../cursuri.html" class="nav-link">Cursuri</a></li>
+                <li><a href="../pachete.html" class="nav-link">Pachete</a></li>
+                <li><a href="../lectori.html" class="nav-link">Lectori</a></li>
+                <li><a href="../about.html" class="nav-link">Despre noi</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Course Hero Section -->
+    <section class="course-hero">
+        <div class="hero-background">
+            <img src="../../assets/images/cursuri/imghero-formtor-autorizat.avif" alt="Formator autorizat" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                    </svg>
+                    Educație profesională
+                </div>
+                
+                <h1 class="course-hero-title">Formator autorizat</h1>
+                <p class="course-hero-subtitle">
+                    Transformă-ți expertiza în impact educațional. Învață să creezi și să conduci sesiuni de training memorabile, 
+                    să inspiri participanții și să facilitezi învățarea eficientă cu metodele moderne de formare profesională.
+                </p>
+                
+                <div class="course-hero-meta">
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                        <span>5 săptămâni</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                        <span>1.350 lei</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                        </svg>
+                        <span>Training intensiv</span>
+                    </div>
+                </div>
+
+                <div class="course-hero-actions">
+                    <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                        Înscrie-te acum
+                    </button>
+                    <a href="../contact.html" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                        </svg>
+                        Solicită detalii
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="../cursuri.html" class="back-to-courses">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+            </svg>
+            Înapoi la cursuri
+        </a>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-description section">
+        <div class="container">
+            <div class="description-grid">
+                <div class="description-main">
+                    <h2>Despre cursul de Formator autorizat</h2>
+                    <p class="lead-text">
+                        Cursul de Formator autorizat este conceput pentru profesioniștii care vor să își transforme expertiza 
+                        într-un impact educațional real. Acest program intensiv de 5 săptămâni îți oferă toate instrumentele 
+                        necesare pentru a deveni un formator de excepție, capabil să inspire și să faciliteze învățarea eficientă.
+                    </p>
+                    
+                    <p>
+                        Vei dezvolta abilități esențiale de comunicare în public, vei învăța să planifici și să livrezi sesiuni 
+                        de training captivante, să utilizezi metodologii moderne de predare și să adaptezi conținutul pentru 
+                        diverse tipuri de participanți. Programul acoperă toate aspectele formării profesionale: de la designul 
+                        curricular și utilizarea tehnologiilor educaționale, până la tehnicile de evaluare și follow-up eficient.
+                    </p>
+                    
+                    <p>
+                        Cursul pune accent pe dezvoltarea unei prezențe autentice și persuasive în fața audienței, pe crearea 
+                        unei experiențe de învățare interactive și memorabile, și pe construirea unui stil personal de predare 
+                        care să rezoneze cu participanții. Vei învăța să gestionezi dinamica grupului, să încurajezi participarea 
+                        activă și să transformi chiar și subiectele complexe în conținut accesibil și angajant.
+                    </p>
+                    
+                    <p>
+                        La finalul programului, vei fi pregătit să conduci training-uri profesionale în orice domeniu de expertiză, 
+                        să dezvolți propriul business de formare sau să lucrezi pentru organizații ca formator intern sau colaborator.
+                    </p>
+                </div>
+                
+                <div class="description-sidebar">
+                    <div class="course-highlights">
+                        <h3>Avantajele cursului</h3>
+                        <ul class="highlights-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Program intensiv și eficient (5 săptămâni)
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Certificat autorizat recunoscut
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Metodologii moderne de predare
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Practică intensivă în timpul cursului
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Preț cel mai accesibil din ofertă
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Acces la comunitatea formatorilor
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-details">
+                        <h3>Detalii curs</h3>
+                        <div class="detail-item">
+                            <span class="detail-label">Durata:</span>
+                            <span class="detail-value">5 săptămâni</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preț:</span>
+                            <span class="detail-value">1.350 lei</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Plată:</span>
+                            <span class="detail-value">Integral sau în rate</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Certificat:</span>
+                            <span class="detail-value">Autorizat MEN + MMJS</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Nivel:</span>
+                            <span class="detail-value">Training profesional</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Format:</span>
+                            <span class="detail-value">Intensiv + practică</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum section">
+        <div class="container">
+            <h2 class="section-title">Curriculumul formatorului profesionist</h2>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                        </svg>
+                    </div>
+                    <h3>Abilități de comunicare</h3>
+                    <p>Dezvoltarea prezenței scenice, tehnici de comunicare persuasivă, utilizarea vocii și limbajului corpului pentru impact maxim.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,1V3H15V1H17V3H21A2,2 0 0,1 23,5V19A2,2 0 0,1 21,21H3A2,2 0 0,1 1,19V5A2,2 0 0,1 3,3H7V1H9M21,8.5H3V19H21V8.5M6,13V15.5H4V13H6M10,13V15.5H8V13H10M14,13V15.5H12V13H14M18,13V15.5H16V13H18Z"/>
+                        </svg>
+                    </div>
+                    <h3>Planificarea sesiunilor de training</h3>
+                    <p>Designul curricular, structurarea conținutului, stabilirea obiectivelor de învățare și crearea agendei optimale pentru diferite tipuri de training.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                        </svg>
+                    </div>
+                    <h3>Livrarea sesiunilor</h3>
+                    <p>Tehnici de prezentare captivante, managementul timpului, facilitarea discuțiilor și menținerea atenției participanților pe parcursul întregii sesiuni.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
+                        </svg>
+                    </div>
+                    <h3>Evaluarea și feedback</h3>
+                    <p>Metode de evaluare a eficacității training-ului, oferirea feedback-ului constructiv, măsurarea progresului și adaptarea strategiilor de predare.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                        </svg>
+                    </div>
+                    <h3>Follow-up eficient</h3>
+                    <p>Strategii de consolidare a învățării, menținerea angajamentului participanților și asigurarea transferului cunoștințelor în practică.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                    </div>
+                    <h3>Managementul grupului</h3>
+                    <p>Tehnici de gestionare a dinamicii grupului, încurajarea participării, rezolvarea conflictelor și adaptarea stilului la diverse personalități.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,17A2,2 0 0,0 11,19H13A2,2 0 0,0 15,17V16H17A1,1 0 0,0 18,15V4A2,2 0 0,0 16,2H8A2,2 0 0,0 6,4V15A1,1 0 0,0 7,16H9V17M13,4V7.5L11.5,6.75L10,7.5V4H13Z"/>
+                        </svg>
+                    </div>
+                    <h3>Metodologii și instrumente</h3>
+                    <p>Diverse metodologii de predare, utilizarea tehnologiilor educaționale, crearea materialelor interactive și adaptarea la stilurile de învățare.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L21,5V11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>Dezvoltarea profesională continuă</h3>
+                    <p>Strategii de dezvoltare ca formator, construirea portofoliului profesional, networking în industrie și menținerea relevanței în domeniu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Skills Section -->
+    <section class="training-skills section">
+        <div class="container">
+            <h2 class="section-title">Competențele formatorului de excepție</h2>
+            <div class="skills-showcase">
+                <div class="skills-intro">
+                    <p class="lead-text">
+                        Un formator de succes combină expertiza tehnică cu abilități excepționale de comunicare 
+                        și o înțelegere profundă a proceselor de învățare ale adulților.
+                    </p>
+                </div>
+                
+                <div class="skills-categories">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                        <h3>Comunicare masteră</h3>
+                        <div class="skill-description">
+                            <p>Dezvoltă o prezență captivantă și o comunicare clară care să inspire și să motiveze participanții.</p>
+                            <ul class="skill-features">
+                                <li>Storytelling persuasiv</li>
+                                <li>Limbaj corporal confident</li>
+                                <li>Adaptarea mesajului la audiență</li>
+                                <li>Gestionarea întrebărilor dificile</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                            </svg>
+                        </div>
+                        <h3>Facilitare expertă</h3>
+                        <div class="skill-description">
+                            <p>Creează un mediu de învățare colaborativ și interactiv care să maximizeze participarea și retenția.</p>
+                            <ul class="skill-features">
+                                <li>Tehnici de facilitare moderne</li>
+                                <li>Managementul dinamicii grupului</li>
+                                <li>Încurajarea învățării active</li>
+                                <li>Crearea experiențelor memorabile</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/>
+                            </svg>
+                        </div>
+                        <h3>Design instructional</h3>
+                        <div class="skill-description">
+                            <p>Structurează conținutul și activitățile pentru a optimiza procesul de învățare și atingerea obiectivelor.</p>
+                            <ul class="skill-features">
+                                <li>Planificarea curriculum-ului</li>
+                                <li>Evaluarea eficacității</li>
+                                <li>Adaptarea la stiluri de învățare</li>
+                                <li>Utilizarea tehnologiei educaționale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intensive Program Section -->
+    <section class="intensive-program section">
+        <div class="container">
+            <h2 class="section-title">Program intensiv de 5 săptămâni</h2>
+            <div class="program-timeline">
+               <div class="timeline-intro">
+                   <p class="lead-text">
+                       Programul concentrat de 5 săptămâni este structurat pentru a-ți dezvolta rapid și eficient 
+                       toate competențele necesare unui formator profesionist de succes.
+                   </p>
+               </div>
+               
+               <div class="timeline-weeks">
+                   <div class="week-item">
+                       <div class="week-number">1</div>
+                       <div class="week-content">
+                           <h3>Fundamentele comunicării</h3>
+                           <p>Dezvoltarea prezenței scenice, tehnici de comunicare eficientă și construirea încrederii în fața audienței.</p>
+                           <div class="week-highlights">
+                               <span class="highlight">Prezența scenică</span>
+                               <span class="highlight">Comunicare persuasivă</span>
+                               <span class="highlight">Limbaj corporal</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="week-item">
+                       <div class="week-number">2</div>
+                       <div class="week-content">
+                           <h3>Planificarea și structurarea</h3>
+                           <p>Designul curricular, stabilirea obiectivelor de învățare și crearea agendei optimale pentru training-uri eficiente.</p>
+                           <div class="week-highlights">
+                               <span class="highlight">Design curricular</span>
+                               <span class="highlight">Obiective de învățare</span>
+                               <span class="highlight">Structurarea conținutului</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="week-item">
+                       <div class="week-number">3</div>
+                       <div class="week-content">
+                           <h3>Facilitarea și interacțiunea</h3>
+                           <p>Tehnici avansate de facilitare, managementul grupului și crearea unui mediu de învățare interactiv și angajant.</p>
+                           <div class="week-highlights">
+                               <span class="highlight">Facilitare modernă</span>
+                               <span class="highlight">Dinamica grupului</span>
+                               <span class="highlight">Învățare activă</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="week-item">
+                       <div class="week-number">4</div>
+                       <div class="week-content">
+                           <h3>Evaluarea și feedback-ul</h3>
+                           <p>Metode de evaluare, oferirea feedback-ului constructiv și măsurarea eficacității training-urilor.</p>
+                           <div class="week-highlights">
+                               <span class="highlight">Tehnici de evaluare</span>
+                               <span class="highlight">Feedback constructiv</span>
+                               <span class="highlight">Măsurarea impactului</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="week-item">
+                       <div class="week-number">5</div>
+                       <div class="week-content">
+                           <h3>Practică și certificare</h3>
+                           <p>Sesiuni practice intensive, prezentări finale și primirea certificatului de formator autorizat.</p>
+                           <div class="week-highlights">
+                               <span class="highlight">Practică intensivă</span>
+                               <span class="highlight">Prezentări finale</span>
+                               <span class="highlight">Certificare</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="program-benefits">
+                   <h3>De ce să alegi programul intensiv?</h3>
+                   <div class="benefits-grid">
+                       <div class="benefit-point">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                           </svg>
+                           <span>Rezultate rapide în timp scurt</span>
+                       </div>
+                       <div class="benefit-point">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
+                           </svg>
+                           <span>Cel mai accesibil preț din ofertă</span>
+                       </div>
+                       <div class="benefit-point">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                           </svg>
+                           <span>Focus intens pe practica</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Requirements Section -->
+   <section class="requirements section">
+       <div class="container">
+           <div class="requirements-content">
+               <h2>Cerințe de participare</h2>
+               <div class="requirements-grid">
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                       </svg>
+                       <div>
+                           <h3>Educație și experiență</h3>
+                           <p>Diplomă de liceu și preferabil experiență profesională într-un domeniu de expertiză</p>
+                       </div>
+                   </div>
+                   
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,3A3,3 0 0,1 15,6V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V6A3,3 0 0,1 12,3M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                       </svg>
+                       <div>
+                           <h3>Dorința de a preda</h3>
+                           <p>Pasiunea pentru împărtășirea cunoștințelor și pentru dezvoltarea altora</p>
+                       </div>
+                   </div>
+                   
+                   <div class="requirement-item">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                       </svg>
+                       <div>
+                           <h3>Deschidere către învățare</h3>
+                           <p>Disponibilitatea de a experimenta metodologii noi și de a primi feedback constructiv</p>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="certificate-info">
+                   <h3>Certificarea de formator autorizat</h3>
+                   <p>
+                       La finalizarea cu succes a cursului, participanții vor primi <strong>certificat de Formator autorizat</strong> 
+                       cu recunoaștere națională, autorizat de Ministerul Educației și Ministerul Muncii și Justiției Sociale. 
+                       Acest certificat îți permite să conduci training-uri profesionale în orice domeniu de expertiză, 
+                       să lucrezi pentru companii ca formator intern sau extern, să dezvolți propriul business de consultanță 
+                       și formare, sau să activezi în sistemul de educație pentru adulți. Certificatul este recunoscut pe 
+                       teritoriul României și în Uniunea Europeană.
+                   </p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Career Opportunities Section -->
+   <section class="career-opportunities section">
+       <div class="container">
+           <h2 class="section-title">Oportunități de carieră</h2>
+           <div class="opportunities-grid">
+               <div class="opportunity-item">
+                   <div class="opportunity-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                       </svg>
+                   </div>
+                   <h3>Formator independent</h3>
+                   <p>Dezvoltarea propriului business de training și consultanță, lucrul cu diverse companii ca formator extern.</p>
+                   <span class="salary-range">3.000 - 10.000 lei/lună</span>
+               </div>
+               
+               <div class="opportunity-item">
+                   <div class="opportunity-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                       </svg>
+                   </div>
+                   <h3>Formator corporativ</h3>
+                   <p>Dezvoltarea și livrarea programelor de training interne pentru companii mari, poziție cu beneficii complete.</p>
+                   <span class="salary-range">4.000 - 8.000 lei/lună</span>
+               </div>
+               
+               <div class="opportunity-item">
+                   <div class="opportunity-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H5A5,5 0 0,1 0,15A5,5 0 0,1 5,10C6.1,10 7.05,10.53 7.64,11.35C9.26,9.91 11.5,9 14,9C15.04,9 16.04,9.19 16.95,9.54C16.63,7.61 15.23,6.08 13.39,5.59C14.22,4.95 15.08,4.61 16,4M16,6A2,2 0 0,0 14,8A2,2 0 0,0 16,10A2,2 0 0,0 18,8A2,2 0 0,0 16,6Z"/>
+                       </svg>
+                   </div>
+                   <h3>Consultant în dezvoltare</h3>
+                   <p>Consultanță specializată în dezvoltarea organizațională, coaching executiv și implementarea schimbărilor.</p>
+                   <span class="salary-range">5.000 - 12.000 lei/lună</span>
+               </div>
+               
+               <div class="opportunity-item">
+                   <div class="opportunity-icon">
+                       <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                       </svg>
+                   </div>
+                   <h3>Educator pentru adulți</h3>
+                   <p>Predarea în sistemul de educație pentru adulți, universități populare și centre de formare continuă.</p>
+                   <span class="salary-range">2.500 - 6.000 lei/lună</span>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- CTA Final Section -->
+   <section class="cta-final section">
+       <div class="container">
+           <div class="cta-final-content">
+               <h2>Transformă-ți expertiza în impact educațional!</h2>
+               <p>
+                   Alătură-te comunității formatorilor profesioniști care fac diferența prin educație. 
+                   Programul nostru intensiv îți oferă toate instrumentele pentru a deveni formatorul pe care participanții îl vor ține minte întotdeauna.
+               </p>
+               
+               <div class="cta-actions">
+                   <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                       </svg>
+                       Înscrie-te la curs
+                   </button>
+                   <a href="../contact.html" class="btn btn-primary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                       </svg>
+                       Sună pentru detalii
+                   </a>
+               </div>
+               
+               <div class="trust-indicators">
+                   <div class="trust-item">
+                       <span class="trust-number">5</span>
+                       <span class="trust-label">Săptămâni intensive</span>
+                   </div>
+                   <div class="trust-item">
+                       <span class="trust-number">1.350</span>
+                       <span class="trust-label">Lei preț total</span>
+                   </div>
+                   <div class="trust-item">
+                       <span class="trust-number">100%</span>
+                       <span class="trust-label">Practică hands-on</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="container">
+           <div class="footer-content">
+               <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="footer-logo">
+               <p class="footer-text">
+                   Centru de formare profesională în domeniul turismului cu peste 20 de ani de experiență. 
+                   Cursuri autorizate cu certificate recunoscute la nivel național.
+               </p>
+               
+               <div class="footer-partners">
+                   <a href="http://www.anc.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="ANC - Autoritatea Națională pentru Calificări">
+                       <img src="../../assets/images/cursuri/ANC.avif" alt="ANC Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Educației">
+                       <img src="../../assets/images/cursuri/MEN_2.avif" alt="Ministerul Educației Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.mmuncii.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Muncii și Justiției Sociale">
+                       <img src="../../assets/images/cursuri/MMJS_1.avif" alt="Ministerul Muncii Logo" class="partner-logo">
+                   </a>
+                   <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener" class="partner-link" title="ANPC SOL">
+                       <img src="../../assets/images/cursuri/anpcsol.avif" alt="ANPC SOL Logo" class="partner-logo">
+                   </a>
+                   <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener" class="partner-link" title="ANPC SAL">
+                       <img src="../../assets/images/cursuri/anpcsal.avif" alt="ANPC SAL Logo" class="partner-logo">
+                   </a>
+               </div>
+           </div>
+           
+           <div class="footer-bottom">
+               <p>&copy; 2025 J'Info Training. Toate drepturile rezervate. | Dezvoltat cu ❤️ pentru educația în turism</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../../js/main.js"></script>
+   <script src="../../js/forms.js"></script>
+   
+   <!-- Course Page Specific Scripts -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           initCoursePageFunctionality();
+       });
+
+       function initCoursePageFunctionality() {
+           // Smooth scroll for hero CTA
+           const heroActions = document.querySelectorAll('.course-hero-actions .btn');
+           heroActions.forEach(btn => {
+               if (btn.onclick) return; // Skip if already has onclick
+               
+               btn.addEventListener('click', function(e) {
+                   if (this.textContent.includes('Înscrie-te')) {
+                       e.preventDefault();
+                       openInscriereModal();
+                   }
+               });
+           });
+           
+           // Animate trust indicators on scroll
+           const trustIndicators = document.querySelectorAll('.trust-number');
+           const observerOptions = {
+               threshold: 0.5,
+               rootMargin: '0px'
+           };
+           
+           const observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                   if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                       entry.target.classList.add('animated');
+                       animateNumber(entry.target);
+                   }
+               });
+           }, observerOptions);
+           
+           trustIndicators.forEach(indicator => observer.observe(indicator));
+       }
+
+       function animateNumber(element) {
+           const target = element.textContent;
+           const isPercentage = target.includes('%');
+           const targetNum = parseInt(target.replace(/\D/g, ''));
+           let current = 0;
+           const increment = targetNum / 50; // 50 frames
+           
+           const timer = setInterval(() => {
+               current += increment;
+               if (current >= targetNum) {
+                   current = targetNum;
+                   clearInterval(timer);
+               }
+               
+               element.textContent = Math.floor(current) + (isPercentage ? '%' : '');
+           }, 30);
+       }
+
+       function openInscriereModal() {
+           // Create modal if it doesn't exist
+           let modal = document.getElementById('course-inscriere-modal');
+           if (!modal) {
+               modal = createCourseInscriereModal();
+               document.body.appendChild(modal);
+           }
+
+           // Pre-select Formator autorizat
+           const courseSelect = modal.querySelector('select[name="curs"]');
+           if (courseSelect) {
+               courseSelect.value = 'formator-autorizat';
+               // Trigger change event to update price
+               courseSelect.dispatchEvent(new Event('change'));
+           }
+
+           // Show modal
+           modal.style.display = 'flex';
+           document.body.style.overflow = 'hidden';
+       }
+
+       function createCourseInscriereModal() {
+           const modal = document.createElement('div');
+           modal.id = 'course-inscriere-modal';
+           modal.className = 'modal';
+           modal.innerHTML = `
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h3>Înscriere - Formator autorizat</h3>
+                       <button class="modal-close" data-close="course-inscriere-modal">&times;</button>
+                   </div>
+                   <div class="modal-body">
+                       <form id="course-inscriere-form">
+                           <div class="form-group">
+                               <label for="curs-nume">Nume complet *</label>
+                               <input type="text" id="curs-nume" name="nume" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-email">Email *</label>
+                               <input type="email" id="curs-email" name="email" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-telefon">Telefon *</label>
+                               <input type="tel" id="curs-telefon" name="telefon" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-selectat">Cursul selectat *</label>
+                               <select id="curs-selectat" name="curs" required>
+                                   <option value="">Alege cursul...</option>
+                                   <option value="formator-autorizat" selected>Formator autorizat (1.350 lei)</option>
+                                   <option value="administrator-pensiune-turistica">Administrator de Pensiune Turistică (1.700 lei)</option>
+                                   <option value="ghid-national-touroperator">Ghid național touroperator (1.700 lei)</option>
+                                   <option value="agent-turism">Agent de turism (2.150 lei)</option>
+                                   <option value="ghid-turism">Ghid de turism (2.150 lei)</option>
+                                   <option value="director-agentie-turism">Director de Agenție de turism (2.850 lei)</option>
+                                   <option value="director-hotel">Director de hotel (2.850 lei)</option>
+                               </select>
+                               <div id="course-price-display" style="display: block; margin-top: 0.5rem; color: var(--primary-orange); font-weight: 600;">Preț: 1.350 Lei</div>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-experienta">Experiența în predare/training</label>
+                               <select id="curs-experienta" name="experienta">
+                                   <option value="">Alege...</option>
+                                   <option value="fara-experienta">Fără experiență în predare</option>
+                                   <option value="prezentari-ocazionale">Prezentări ocazionale la lucru</option>
+                                   <option value="training-informal">Training informal pentru colegi</option>
+                                   <option value="experienta-predare">Experiență în predare/training</option>
+                                   <option value="formator-experimentat">Formator cu experiență</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-domeniu">Domeniul de expertiză</label>
+                               <select id="curs-domeniu" name="domeniu_expertiza">
+                                   <option value="">Alege...</option>
+                                   <option value="turism-ospitalitate">Turism și ospitalitate</option>
+                                   <option value="it-tehnologie">IT și tehnologie</option>
+                                   <option value="vanzari-marketing">Vânzări și marketing</option>
+                                   <option value="hr-management">HR și management</option>
+                                   <option value="finante-contabilitate">Finanțe și contabilitate</option>
+                                   <option value="sanatate-medicina">Sănătate și medicină</option>
+                                   <option value="educatie-dezvoltare">Educație și dezvoltare personală</option>
+                                   <option value="altele">Altele</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-obiective">Obiectivele tale ca formator</label>
+                               <select id="curs-obiective" name="obiective">
+                                   <option value="">Alege...</option>
+                                   <option value="formator-independent">Formator independent</option>
+                                   <option value="formator-corporativ">Formator corporativ intern</option>
+                                   <option value="consultant-dezvoltare">Consultant în dezvoltare</option>
+                                   <option value="educator-adulti">Educator pentru adulți</option>
+                                   <option value="imbunatatire-prezentari">Îmbunătățirea prezentărilor la lucru</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-data">Data preferată de începere</label>
+                               <select id="curs-data" name="data_preferata">
+                                   <option value="">Alege...</option>
+                                   <option value="cat-mai-repede">Cât mai repede posibil</option>
+                                   <option value="1-2-saptamani">În 1-2 săptămâni</option>
+                                   <option value="luna-viitoare">Luna viitoare</option>
+                                   <option value="peste-2-luni">Peste 2 luni</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-mesaj">Ce te motivează să devii formator? (opțional)</label>
+                               <textarea id="curs-mesaj" name="mesaj" rows="3" placeholder="Ce impact vrei să ai prin training? Ce cunoștințe dorești să transmiți?"></textarea>
+                           </div>
+                           
+                           <div class="form-actions">
+                               <button type="submit" class="btn btn-primary">
+                                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                       <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                                   </svg>
+                                   Trimite înscriere
+                               </button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           `;
+
+           // Add event listeners
+           const closeBtn = modal.querySelector('.modal-close');
+           closeBtn.addEventListener('click', () => closeCourseModal(modal));
+           
+           modal.addEventListener('click', (e) => {
+               if (e.target === modal) {
+                   closeCourseModal(modal);
+               }
+           });
+
+           // Add form submission handler
+           const form = modal.querySelector('#course-inscriere-form');
+           form.addEventListener('submit', handleCourseInscriereSubmit);
+
+           // Add course price update
+           const courseSelect = modal.querySelector('#curs-selectat');
+           courseSelect.addEventListener('change', updateCoursePriceDisplay);
+
+           return modal;
+       }
+
+       function closeCourseModal(modal) {
+           modal.style.display = 'none';
+           document.body.style.overflow = '';
+       }
+
+       function updateCoursePriceDisplay() {
+           const priceDisplay = document.getElementById('course-price-display');
+           const prices = {
+               'formator-autorizat': '1.350 Lei',
+               'administrator-pensiune-turistica': '1.700 Lei',
+               'ghid-national-touroperator': '1.700 Lei',
+               'agent-turism': '2.150 Lei',
+               'ghid-turism': '2.150 Lei',
+               'director-agentie-turism': '2.850 Lei',
+               'director-hotel': '2.850 Lei'
+           };
+           
+           const selectedPrice = prices[this.value];
+           if (selectedPrice) {
+               priceDisplay.textContent = `Preț: ${selectedPrice}`;
+               priceDisplay.style.display = 'block';
+           } else {
+               priceDisplay.style.display = 'none';
+           }
+       }
+
+       async function handleCourseInscriereSubmit(e) {
+           e.preventDefault();
+           
+           const form = e.target;
+           const submitBtn = form.querySelector('button[type="submit"]');
+           const originalHTML = submitBtn.innerHTML;
+           
+           try {
+               // Show loading
+               submitBtn.disabled = true;
+               submitBtn.innerHTML = `
+                   <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
+                   </svg>
+                   Se trimite...
+               `;
+               
+               // Get form data
+               const formData = new FormData(form);
+               const data = Object.fromEntries(formData.entries());
+               
+               // Send via EmailJS (replace with your actual service/template IDs)
+               await emailjs.send('service_tcy7j6c', 'template_n4vdpoi', {
+                   from_name: data.nume,
+                   from_email: data.email,
+                   phone: data.telefon,
+                   course: 'Formator autorizat',
+                   experienta: data.experienta || 'Nu a specificat',
+                   domeniu_expertiza: data.domeniu_expertiza || 'Nu a specificat',
+                   obiective: data.obiective || 'Nu a specificat',
+                   data_preferata: data.data_preferata || 'Nu a specificat',
+                   message: data.mesaj || 'Înscriere din pagina Formator autorizat',
+                   form_type: 'course-inscriere-formator-autorizat'
+               });
+               
+               // Success
+               showSuccessModal('Formator Autorizat');
+               form.reset();
+               closeCourseModal(document.getElementById('course-inscriere-modal'));
+               
+           } catch (error) {
+               console.error('Course inscription error:', error);
+               alert('A apărut o eroare. Vă rugăm să încercați din nou sau să ne contactați telefonic.');
+           } finally {
+               submitBtn.disabled = false;
+               submitBtn.innerHTML = originalHTML;
+           }
+       }
+   </script>
+</body>
+</html>

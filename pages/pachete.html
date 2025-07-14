@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Pachete promoționale J'Info Training - Economisește până la 26% cu pachetele noastre combinate. 2 cursuri autorizate la prețul unuia.">
+   <meta name="keywords" content="pachete cursuri turism, reduceri cursuri, agent turism pachet, director hotel pachet, ghid turism pachet">
+   <meta name="author" content="J'Info Training">
+   
+   <!-- Open Graph -->
+   <meta property="og:title" content="Pachete Promoționale de Cursuri - J'Info Training">
+   <meta property="og:description" content="Economisește până la 26% cu pachetele noastre combinate. Două cursuri autorizate la un preț special.">
+   <meta property="og:image" content="../assets/images/cursuri/imagineheroindex.avif">
+   <meta property="og:url" content="https://jinfotraining.ro/pachete">
+   
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" href="../assets/images/cursuri/faviconjinfotraining.png">
+   
+   <!-- Stylesheets -->
+   <link rel="stylesheet" href="../css/variables.css">
+   <link rel="stylesheet" href="../css/components.css">
+   <link rel="stylesheet" href="../css/style.css">
+   
+   <!-- EmailJS -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+   <title>Pachete Promoționale de Cursuri - J'Info Training</title>
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar" id="navbar">
+       <div class="nav-container">
+           <a href="../" class="nav-logo-link">
+               <img src="../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="nav-logo">
+           </a>
+           
+           <ul class="nav-menu" id="nav-menu">
+               <li><a href="../" class="nav-link">Acasa</a></li>
+               <li><a href="cursuri.html" class="nav-link">Cursuri</a></li>
+               <li><a href="pachete.html" class="nav-link active">Pachete</a></li>
+               <li><a href="lectori.html" class="nav-link">Lectori</a></li>
+               <li><a href="about.html" class="nav-link">Despre noi</a></li>
+               <li><a href="contact.html" class="nav-link">Contact</a></li>
+           </ul>
+           
+           <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+               <span></span>
+               <span></span>
+               <span></span>
+           </button>
+       </div>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="packages-hero">
+          <div class="hero-background">
+            <img src="../../assets/images/cursuri/imagineheroindex.avif" alt="Agent de turism" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+       <div class="container">
+           <div class="packages-hero-content">
+               <div class="hero-badge">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                   </svg>
+                   Pachete Promoționale
+               </div>
+               <h1 class="packages-hero-title">Economisește cu pachetele noastre combinate</h1>
+               <p class="packages-hero-subtitle">
+                   Două cursuri autorizate la prețul unuia! Reduceri până la <strong>26%</strong> pentru pachetele noastre specializate în turism.
+               </p>
+               <div class="packages-hero-features">
+                   <div class="feature">
+                       <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z"/>
+                       </svg>
+                       <span>Planificare flexibilă</span>
+                   </div>
+                   <div class="feature">
+                       <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                       </svg>
+                       <span>Economii garantate</span>
+                   </div>
+                   <div class="feature">
+                       <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M13,21L15.5,18.5L18,21V9H13V21M4,3H18A2,2 0 0,1 20,5V9H18V5H4V19H9V21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3M6,7H16V9H6V7M6,11H14V13H6V11M6,15H14V17H6V15Z"/>
+                       </svg>
+                       <span>Certificate duble</span>
+                   </div>
+               </div>
+               <div class="packages-hero-cta">
+                   <a href="#pachete-grid" class="btn btn-secondary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                       </svg>
+                       Descoperă pachetele
+                   </a>
+                   <a href="../contact.html" class="btn btn-primary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                       </svg>
+                       Consultanță gratuită
+                   </a>
+               </div>
+           </div>
+       </div>
+       
+       <!-- Floating Elements -->
+       <div class="hero-float hero-float-1">
+           <svg viewBox="0 0 24 24" fill="currentColor">
+               <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+           </svg>
+       </div>
+       <div class="hero-float hero-float-2">
+           <svg viewBox="0 0 24 24" fill="currentColor">
+               <path d="M13,21L15.5,18.5L18,21V9H13V21M4,3H18A2,2 0 0,1 20,5V9H18V5H4V19H9V21H4A2,2 0 0,1 2,19V5A2,2 0 0,1 4,3M6,7H16V9H6V7M6,11H14V13H6V11M6,15H14V17H6V15Z"/>
+           </svg>
+       </div>
+       <div class="hero-float hero-float-3">
+           <svg viewBox="0 0 24 24" fill="currentColor">
+               <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+           </svg>
+       </div>
+   </section>
+
+   <!-- Benefits Section -->
+   <section class="benefits-section section">
+       <div class="container">
+           <div class="benefits-grid">
+               <div class="benefit-item">
+                   <div class="benefit-icon">
+                       <svg viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.9 16,12.4 16,13V16C16,17 15,18 14,18H10C9,18 8,17 8,16V13C8,12.4 8.6,11.9 9.2,11.5V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,10V11.5H13.5V10C13.5,8.7 12.8,8.2 12,8.2Z"/>
+                       </svg>
+                   </div>
+                   <h3>Garanție de calitate</h3>
+                   <p>Certificate autorizate recunoscute de Ministerul Educației și ANC cu validitate națională.</p>
+               </div>
+               
+               <div class="benefit-item">
+                   <div class="benefit-icon">
+                       <svg viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                       </svg>
+                   </div>
+                   <h3>Consultanță inclusă</h3>
+                   <p>Suport complet pe parcursul cursurilor și consultanță de carieră după absolvire.</p>
+               </div>
+               
+               <div class="benefit-item">
+                   <div class="benefit-icon">
+                       <svg viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                       </svg>
+                   </div>
+                   <h3>Plată în rate</h3>
+                   <p>Opțiuni de plată flexibile în 3 rate lunare consecutive fără dobânzi suplimentare.</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Packages Grid Section -->
+   <section class="packages-grid-section section" id="pachete-grid">
+       <div class="container">
+           <h2 class="section-title">Alege pachetul potrivit pentru tine</h2>
+           <p class="section-subtitle">Fiecare pachet include două cursuri complementare cu reduceri substanțiale</p>
+           
+           <div class="packages-grid">
+               <!-- Pachet 2000 - Ghid -->
+               <div class="package-card package-card-featured">
+                   <div class="package-header">
+                       <img src="../assets/images/pachete/pachet 2.avif" alt="Pachet 2000 - Ghid" class="package-image">
+                       <div class="package-overlay">
+                           <div class="package-badge">
+                               <span class="badge-text">PACHET 2000</span>
+                               <span class="badge-subtitle">Specializare Ghidaj</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="package-content">
+                       <h3 class="package-title">Pachet Ghidaj Complet</h3>
+                       <div class="package-courses">
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                               </svg>
+                               <span><strong>Ghid de turism</strong> (curs de calificare)</span>
+                           </div>
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/>
+                               </svg>
+                               <span><strong>Ghid național touroperator</strong> (curs de specializare)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-pricing">
+                           <div class="price-row">
+                               <span class="price-label">Preț pachet:</span>
+                               <span class="package-price">2.850 lei</span>
+                           </div>
+                           <div class="price-row">
+                               <span class="price-label">Preț individual:</span>
+                               <span class="original-price">3.850 lei</span>
+                           </div>
+                           <div class="savings-row">
+                               <span class="savings-badge">Economisești 1.000 lei (26%)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-duration">
+                           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                           </svg>
+                           <span>Durată totală: 6 luni</span>
+                       </div>
+                       
+                       <div class="package-actions">
+                           <a href="pachete/pachetul-2000-ghid.html" class="btn btn-primary">
+                               Detalii complete
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                               </svg>
+                           </a>
+                           <button class="btn btn-secondary btn-inscriere" data-package="Pachet 2000 - Ghid">
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                               </svg>
+                               Înscrie-te acum
+                           </button>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Pachet 3000 I -->
+               <div class="package-card">
+                   <div class="package-header">
+                       <img src="../assets/images/pachete/pachet 1.avif" alt="Pachet 3000 I" class="package-image">
+                       <div class="package-overlay">
+                           <div class="package-badge">
+                               <span class="badge-text">PACHET 3000 I</span>
+                               <span class="badge-subtitle">Management Agenții</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="package-content">
+                       <h3 class="package-title">Pachet Management Agenții</h3>
+                       <div class="package-courses">
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M16,4H18V16H16V4M6,4H8V16H6V4M8,2V4H16V2A2,2 0 0,0 14,0H10A2,2 0 0,0 8,2M10,20A2,2 0 0,0 12,22A2,2 0 0,0 14,20H10M4,6H20V18H4V6Z"/>
+                               </svg>
+                               <span><strong>Agent de turism</strong> (curs de calificare)</span>
+                           </div>
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                               </svg>
+                               <span><strong>Director de Agenție</strong> (curs de specializare)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-pricing">
+                           <div class="price-row">
+                               <span class="price-label">Preț pachet:</span>
+                               <span class="package-price">3.850 lei</span>
+                           </div>
+                           <div class="price-row">
+                               <span class="price-label">Preț individual:</span>
+                               <span class="original-price">5.000 lei</span>
+                           </div>
+                           <div class="savings-row">
+                               <span class="savings-badge">Economisești 1.150 lei (23%)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-duration">
+                           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                           </svg>
+                           <span>Durată totală: 10 luni</span>
+                       </div>
+                       
+                       <div class="package-actions">
+                           <a href="pachete/pachet-3000-i.html" class="btn btn-primary">
+                               Detalii complete
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                               </svg>
+                           </a>
+                           <button class="btn btn-secondary btn-inscriere" data-package="Pachet 3000 I">
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                               </svg>
+                               Înscrie-te acum
+                           </button>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Pachet 3000 II -->
+               <div class="package-card">
+                   <div class="package-header">
+                       <img src="../assets/images/pachete/pachet 3.avif" alt="Pachet 3000 II" class="package-image">
+                       <div class="package-overlay">
+                           <div class="package-badge">
+                               <span class="badge-text">PACHET 3000 II</span>
+                               <span class="badge-subtitle">Management Hotelier</span>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="package-content">
+                       <h3 class="package-title">Pachet Management Hotelier</h3>
+                       <div class="package-courses">
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M16,4H18V16H16V4M6,4H8V16H6V4M8,2V4H16V2A2,2 0 0,0 14,0H10A2,2 0 0,0 8,2M10,20A2,2 0 0,0 12,22A2,2 0 0,0 14,20H10M4,6H20V18H4V6Z"/>
+                               </svg>
+                               <span><strong>Agent de turism</strong> (curs de calificare)</span>
+                           </div>
+                           <div class="course-item">
+                               <svg class="course-icon" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M6.5,2C7.3,2 8,2.7 8,3.5V4.5C8,5.3 7.3,6 6.5,6C5.7,6 5,5.3 5,4.5V3.5C5,2.7 5.7,2 6.5,2M17.5,2C18.3,2 19,2.7 19,3.5V4.5C19,5.3 18.3,6 17.5,6C16.7,6 16,5.3 16,4.5V3.5C16,2.7 16.7,2 17.5,2M3,8H21V20C21,21.1 20.1,22 19,22H5C3.9,22 3,21.1 3,20V8M5,10V12H7V10H5M9,10V12H11V10H9M13,10V12H15V10H13M17,10V12H19V10H17M5,14V16H7V14H5M9,14V16H11V14H9M13,14V16H15V14H13M17,14V16H19V14H17Z"/>
+                               </svg>
+                               <span><strong>Director de hotel</strong> (curs de specializare)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-pricing">
+                           <div class="price-row">
+                               <span class="price-label">Preț pachet:</span>
+                               <span class="package-price">3.850 lei</span>
+                           </div>
+                           <div class="price-row">
+                               <span class="price-label">Preț individual:</span>
+                               <span class="original-price">5.000 lei</span>
+                           </div>
+                           <div class="savings-row">
+                               <span class="savings-badge">Economisești 1.150 lei (23%)</span>
+                           </div>
+                       </div>
+                       
+                       <div class="package-duration">
+                           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                               <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                           </svg>
+                           <span>Durată totală: 10 luni</span>
+                       </div>
+                       
+                       <div class="package-actions">
+                           <a href="pachete/pachet-3000-ii.html" class="btn btn-primary">
+                               Detalii complete
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                               </svg>
+                           </a>
+                           <button class="btn btn-secondary btn-inscriere" data-package="Pachet 3000 II">
+                               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                   <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                               </svg>
+                               Înscrie-te acum
+                           </button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Comparison Section -->
+   <section class="comparison-section section">
+       <div class="container">
+           <h2 class="section-title">De ce să alegi un pachet?</h2>
+           <div class="comparison-grid">
+               <div class="comparison-card">
+                   <div class="comparison-header">
+                       <h3>Cursuri individuale</h3>
+                       <div class="comparison-price">5.000 lei</div>
+                   </div>
+                   <ul class="comparison-features">
+                       <li>✓ Un certificat la finalul cursului</li>
+                       <li>✓ Specializare într-un singur domeniu</li>
+                       <li>✓ Flexibilitate în programare</li>
+                       <li>× Nu include reduceri</li>
+                       <li>× Costuri mai mari pe termen lung</li>
+                   </ul>
+               </div>
+               
+               <div class="comparison-card comparison-recommended">
+                   <div class="comparison-badge">Recomandat</div>
+                   <div class="comparison-header">
+                       <h3>Pachete combinate</h3>
+                       <div class="comparison-price">3.850 lei</div>
+                       <div class="comparison-savings">Economii până la 26%</div>
+                   </div>
+                   <ul class="comparison-features">
+                       <li>✓ Două certificate autorizate</li>
+                       <li>✓ Competențe complementare</li>
+                       <li>✓ Planificare coordonată</li>
+                       <li>✓ Reduceri substanțiale</li>
+                       <li>✓ Suport continuu pe toată durata</li>
+                       <li>✓ Avantaj competitiv pe piața muncii</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- FAQ Section -->
+   <section class="faq-section section">
+       <div class="container">
+           <h2 class="section-title">Întrebări frecvente despre pachete</h2>
+           <div class="faq-grid">
+               <div class="faq-item">
+                   <button class="faq-question" data-faq="1">
+                       <span>Pot urma cursurile din pachet în ordine diferită?</span>
+                       <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                       </svg>
+                   </button>
+                   <div class="faq-answer" id="faq-1">
+                       <p>Da, ordinea cursurilor poate fi adaptată în funcție de nevoile dumneavoastră. Recomandăm să începeți cu cursul de calificare (Agent de turism/Ghid de turism) și apoi să continuați cu cursul de specializare.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <button class="faq-question" data-faq="2">
+                       <span>Ce se întâmplă dacă nu pot finaliza ambele cursuri?</span>
+                       <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                       </svg>
+                   </button>
+                   <div class="faq-answer" id="faq-2">
+                       <p>Fiecare curs din pachet este independent și veți primi certificat pentru cursurile finalizate. Programul poate fi întrerupt și reluat în funcție de situația personală.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <button class="faq-question" data-faq="3">
+                       <span>Pot achita pachetul în rate?</span>
+                       <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                       </svg>
+                   </button>
+                   <div class="faq-answer" id="faq-3">
+                       <p>Da, toate pachetele pot fi achitate în maxim 3 rate lunare consecutive fără dobânzi suplimentare. Prima rată se achită la înscriere.</p>
+                   </div>
+               </div>
+               
+               <div class="faq-item">
+                   <button class="faq-question" data-faq="4">
+                       <span>Sunt incluse materialele de curs?</span>
+                       <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                       </svg>
+                   </button>
+                   <div class="faq-answer" id="faq-4">
+                       <p>Da, prețul pachetului include toate materialele de curs, suportul detaliat și accesul la platforma noastră de e-learning pentru ambele cursuri.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- CTA Section -->
+   <section class="cta-section">
+       <div class="container">
+           <div class="cta-content">
+               <h2>Gata să începi cu un pachet complet?</h2>
+               <p>Alege pachetul potrivit și beneficiază de reduceri substanțiale pentru o carieră de succes în turism.</p>
+               <div class="cta-actions">
+                   <a href="../contact.html" class="btn btn-primary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                       </svg>
+                       Consultanță gratuită
+                   </a>
+                   <a href="cursuri.html" class="btn btn-secondary btn-lg">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                       </svg>
+                       Vezi cursurile individuale
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="container">
+           <div class="footer-content">
+               <img src="../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="footer-logo">
+               <p class="footer-text">
+                   Centru de formare profesională în domeniul turismului cu peste 20 de ani de experiență. 
+                   Cursuri autorizate cu certificate recunoscute la nivel național.
+               </p>
+               
+               <div class="footer-partners">
+                   <a href="http://www.anc.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="ANC - Autoritatea Națională pentru Calificări">
+                       <img src="../assets/images/cursuri/ANC.avif" alt="ANC Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Educației">
+                       <img src="../assets/images/cursuri/MEN_2.avif" alt="Ministerul Educației Logo" class="partner-logo">
+                   </a>
+                   <a href="https://www.mmuncii.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Muncii și Justiției Sociale">
+                       <img src="../assets/images/cursuri/MMJS_1.avif" alt="Ministerul Muncii Logo" class="partner-logo">
+                   </a>
+                   <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener" class="partner-link" title="ANPC SOL">
+                       <img src="../assets/images/cursuri/anpcsol.avif" alt="ANPC SOL Logo" class="partner-logo">
+                   </a>
+                   <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener" class="partner-link" title="ANPC SAL">
+                       <img src="../assets/images/cursuri/anpcsal.avif" alt="ANPC SAL Logo" class="partner-logo">
+                   </a>
+               </div>
+           </div>
+           
+           <div class="footer-bottom">
+               <p>&copy; 2025 J'Info Training. Toate drepturile rezervate. | Dezvoltat cu ❤️ pentru educația în turism</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../js/main.js"></script>
+   <script src="../js/forms.js"></script>
+   
+   <!-- Package Page Scripts -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           initPackageInscriereButtons();
+           initFAQ();
+       });
+
+       function initPackageInscriereButtons() {
+           const inscriereButtons = document.querySelectorAll('.btn-inscriere');
+           
+           inscriereButtons.forEach(button => {
+               button.addEventListener('click', function() {
+                   const packageName = this.dataset.package;
+                   openPackageInscriereModal(packageName);
+               });
+           });
+       }
+
+       function openPackageInscriereModal(packageName) {
+           // Create or get modal
+           let modal = document.getElementById('package-inscriere-modal');
+           if (!modal) {
+               modal = createPackageInscriereModal();
+               document.body.appendChild(modal);
+           }
+
+           // Set package in select
+           const packageSelect = modal.querySelector('select[name="pachet"]');
+           if (packageSelect) {
+               const packageMapping = {
+                   'Pachet 2000 - Ghid': 'pachet-2000',
+                   'Pachet 3000 I': 'pachet-3000-i',
+                   'Pachet 3000 II': 'pachet-3000-ii'
+               };
+               
+               const selectValue = packageMapping[packageName];
+               if (selectValue) {
+                   packageSelect.value = selectValue;
+                   packageSelect.dispatchEvent(new Event('change'));
+               }
+           }
+
+           // Show modal
+           modal.style.display = 'flex';
+           document.body.style.overflow = 'hidden';
+       }
+
+       function createPackageInscriereModal() {
+           const modal = document.createElement('div');
+           modal.id = 'package-inscriere-modal';
+           modal.className = 'modal';
+           modal.innerHTML = `
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h3>Înscriere la pachet</h3>
+                       <button class="modal-close" data-close="package-inscriere-modal">&times;</button>
+                   </div>
+                   <div class="modal-body">
+                       <form id="package-inscriere-form">
+                           <div class="form-group">
+                               <label for="pack-nume">Nume complet *</label>
+                               <input type="text" id="pack-nume" name="nume" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="pack-email">Email *</label>
+                               <input type="email" id="pack-email" name="email" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="pack-telefon">Telefon *</label>
+                               <input type="tel" id="pack-telefon" name="telefon" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="pack-selectat">Pachetul selectat *</label>
+                               <select id="pack-selectat" name="pachet" required>
+                                   <option value="">Alege pachetul...</option>
+                                   <option value="pachet-2000">Pachet 2000 - Ghid (2.850 lei)</option>
+                                   <option value="pachet-3000-i">Pachet 3000 I - Management Agenții (3.850 lei)</option>
+                                   <option value="pachet-3000-ii">Pachet 3000 II - Management Hotelier (3.850 lei)</option>
+                               </select>
+                               <div id="package-price-display" style="display: none; margin-top: 0.5rem; color: var(--primary-orange); font-weight: 600;"></div>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="pack-mesaj">Mesaj (opțional)</label>
+                               <textarea id="pack-mesaj" name="mesaj" rows="3" placeholder="Întrebări despre pachet, data dorită pentru începerea cursurilor, etc."></textarea>
+                           </div>
+                           
+                           <div class="form-actions">
+                               <button type="submit" class="btn btn-primary">
+                                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                       <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                                   </svg>
+                                   Trimite înscriere
+                               </button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           `;
+
+           // Add event listeners
+           const closeBtn = modal.querySelector('.modal-close');
+           closeBtn.addEventListener('click', () => closePackageInscriereModal(modal));
+           
+           modal.addEventListener('click', (e) => {
+               if (e.target === modal) {
+                   closePackageInscriereModal(modal);
+               }
+           });
+
+           // Add form handlers
+           const form = modal.querySelector('#package-inscriere-form');
+           form.addEventListener('submit', handlePackageInscriereSubmit);
+
+           const packageSelect = modal.querySelector('#pack-selectat');
+           packageSelect.addEventListener('change', updatePackagePriceDisplay);
+
+           return modal;
+       }
+
+       function closePackageInscriereModal(modal) {
+           modal.style.display = 'none';
+           document.body.style.overflow = '';
+       }
+
+       function updatePackagePriceDisplay() {
+           const priceDisplay = document.getElementById('package-price-display');
+           const prices = {
+               'pachet-2000': '2.850 Lei (economii 1.000 lei)',
+               'pachet-3000-i': '3.850 Lei (economii 1.150 lei)',
+               'pachet-3000-ii': '3.850 Lei (economii 1.150 lei)'
+           };
+           
+           const selectedPrice = prices[this.value];
+           if (selectedPrice) {
+               priceDisplay.textContent = `Preț: ${selectedPrice}`;
+               priceDisplay.style.display = 'block';
+           } else {
+               priceDisplay.style.display = 'none';
+           }
+       }
+
+       async function handlePackageInscriereSubmit(e) {
+           e.preventDefault();
+           
+           const form = e.target;
+           const submitBtn = form.querySelector('button[type="submit"]');
+           const originalHTML = submitBtn.innerHTML;
+           
+           try {
+               submitBtn.disabled = true;
+               submitBtn.innerHTML = `
+                   <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
+                   </svg>
+                   Se trimite...
+               `;
+               
+               const formData = new FormData(form);
+               const data = Object.fromEntries(formData.entries());
+               
+               await emailjs.send('service_tcy7j6c', 'template_n4vdpoi', {
+                   from_name: data.nume,
+                   from_email: data.email,
+                   phone: data.telefon,
+                   package: data.pachet,
+                   message: data.mesaj || 'Înscriere din pagina de pachete',
+                   form_type: 'package-inscriere'
+               });
+               
+               alert('Înscrierea a fost trimisă cu succes! Vă vom contacta în curând pentru detalii despre pachet.');
+               form.reset();
+               closePackageInscriereModal(document.getElementById('package-inscriere-modal'));
+               
+           } catch (error) {
+               console.error('Package inscription error:', error);
+               alert('A apărut o eroare. Vă rugăm să încercați din nou.');
+           } finally {
+               submitBtn.disabled = false;
+               submitBtn.innerHTML = originalHTML;
+           }
+       }
+
+       function initFAQ() {
+           const faqQuestions = document.querySelectorAll('.faq-question');
+           
+           faqQuestions.forEach(question => {
+               question.addEventListener('click', function() {
+                   const faqId = this.dataset.faq;
+                   const answer = document.getElementById(`faq-${faqId}`);
+                   const icon = this.querySelector('.faq-icon');
+                   
+                   // Toggle current FAQ
+                   const isActive = answer.classList.contains('active');
+                   
+                   // Close all FAQs
+                   document.querySelectorAll('.faq-answer').forEach(ans => {
+                       ans.classList.remove('active');
+                   });
+                   document.querySelectorAll('.faq-icon').forEach(ic => {
+                       ic.style.transform = 'rotate(0deg)';
+                   });
+                   
+                   // Open current FAQ if it wasn't active
+                   if (!isActive) {
+                       answer.classList.add('active');
+                       icon.style.transform = 'rotate(180deg)';
+                   }
+               });
+           });
+       }
+   </script>
+</body>
+</html>

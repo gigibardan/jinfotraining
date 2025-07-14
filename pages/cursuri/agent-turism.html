@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curs Agent de turism autorizat - J'Info Training. 4 luni, 2.150 lei. Învață piața turistică, rezervări, ticketing, vânzări și pachete turistice.">
+    <meta name="keywords" content="agent turism bucuresti, curs agent turism, certificat autorizat agent turism, rezervari turistice, ticketing">
+    <meta name="author" content="J'Info Training">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Curs Agent de turism - J'Info Training">
+    <meta property="og:description" content="Devino agent de turism certificat în 4 luni. Învață rezervări, ticketing, vânzări și pachete turistice cu certificate autorizate.">
+    <meta property="og:image" content="../assets/images/cursuri/agent-de-turism.avif">
+    <meta property="og:url" content="https://jinfotraining.ro/cursuri/agent-turism">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/cursuri/faviconjinfotraining.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <title>Curs Agent de turism Autorizat - J'Info Training</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../" class="nav-logo-link">
+                <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="nav-logo">
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../" class="nav-link">Acasa</a></li>
+                <li><a href="../cursuri.html" class="nav-link">Cursuri</a></li>
+                <li><a href="../pachete.html" class="nav-link">Pachete</a></li>
+                <li><a href="../lectori.html" class="nav-link">Lectori</a></li>
+                <li><a href="../about.html" class="nav-link">Despre noi</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Course Hero Section -->
+    <section class="course-hero">
+        <div class="hero-background">
+            <img src="../../assets/images/cursuri/imghero-agent-de-turism.avif" alt="Agent de turism" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+                    </svg>
+                    Certificat autorizat
+                </div>
+                
+                <h1 class="course-hero-title">Agent de turism</h1>
+                <p class="course-hero-subtitle">
+                    Devino expert în industria turismului cu cursul nostru complet de Agent de turism. 
+                    Învață rezervări, ticketing, vânzări și crearea de pachete turistice atractive.
+                </p>
+                
+                <div class="course-hero-meta">
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                        <span>4 luni</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                        <span>2.150 lei</span>
+                    </div>
+                    <div class="course-info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16,14H18V16H16V14M12,14H14V16H12V14M16,10H18V12H16V10M12,10H14V12H12V10M8,14H10V16H8V14M8,10H10V12H8V10M8,6H10V8H8V6M4,14H6V16H4V14M4,10H6V12H4V10M4,6H6V8H4V6M4,2H6V4H4V2M8,2H10V4H8V2M12,2H14V4H12V2M16,2H18V4H16V2M20,2H22V4H20V2M2,2V22H24V2H2Z"/>
+                        </svg>
+                        <span>Flexibil</span>
+                    </div>
+                </div>
+
+                <div class="course-hero-actions">
+                    <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                        Înscrie-te acum
+                    </button>
+                    <a href="../contact.html" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                        </svg>
+                        Solicită detalii
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="../cursuri.html" class="back-to-courses">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+            </svg>
+            Înapoi la cursuri
+        </a>
+    </section>
+
+    <!-- Course Description Section -->
+    <section class="course-description section">
+        <div class="container">
+            <div class="description-grid">
+                <div class="description-main">
+                    <h2>Despre cursul de Agent de turism</h2>
+                    <p class="lead-text">
+                        Cursul de Agent de turism te pregătește pentru o carieră de succes în industria ospitalității și turismului. 
+                        Vei dobândi competențele necesare pentru a lucra în agenții de turism, tour-operatori sau pentru a-ți deschide propria afacere.
+                    </p>
+                    
+                    <p>
+                        Programul acoperă toate aspectele esențiale ale activității unui agent de turism: de la înțelegerea pieței turistice 
+                        și rezervarea serviciilor, până la ticketing, vânzări eficiente și crearea de pachete turistice personalizate. 
+                        Vei învăța să prezinți destinațiile într-un mod atractiv și să gestionezi relațiile cu clienții pentru a asigura 
+                        experiențe de călătorie memorabile.
+                    </p>
+                    
+                    <p>
+                        Cursul include și elemente de contabilitate specifică domeniului turistic și comunicare în limba engleză, 
+                        competențe esențiale în această industrie globalizată. La finalul cursului, vei fi pregătit să îți asumi 
+                        responsabilități complexe în organizarea și vânzarea de servicii turistice.
+                    </p>
+                </div>
+                
+                <div class="description-sidebar">
+                    <div class="course-highlights">
+                        <h3>Avantajele cursului</h3>
+                        <ul class="highlights-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Certificat autorizat recunoscut național
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Program complet și actualizat
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Formatori cu experiență practică
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Suport post-absolvire
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                                </svg>
+                                Oportunități de networking
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="course-details">
+                        <h3>Detalii curs</h3>
+                        <div class="detail-item">
+                            <span class="detail-label">Durata:</span>
+                            <span class="detail-value">4 luni</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preț:</span>
+                            <span class="detail-value">2.150 lei</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Plată:</span>
+                            <span class="detail-value">Integral sau în rate</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Certificat:</span>
+                            <span class="detail-value">Autorizat MEN</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Nivel:</span>
+                            <span class="detail-value">Începător - Avansat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum section">
+        <div class="container">
+            <h2 class="section-title">Ce vei învăța</h2>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,17L16.24,14.14L15.23,13.13L12.5,15.5L8.77,13.13L7.76,14.14L12,17M12,7L7.76,9.86L8.77,10.87L11.5,8.5L15.23,10.87L16.24,9.86L12,7Z"/>
+                        </svg>
+                    </div>
+                    <h3>Piața turistică</h3>
+                    <p>Înțelegerea structurii și dinamicii pieței turistice românești și internaționale, tendințe și oportunități.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,1V3H15V1H17V3H21A2,2 0 0,1 23,5V19A2,2 0 0,1 21,21H3A2,2 0 0,1 1,19V5A2,2 0 0,1 3,3H7V1H9M21,8.5H3V19H21V8.5M6,13V15.5H4V13H6M10,13V15.5H8V13H10M14,13V15.5H12V13H14M18,13V15.5H16V13H18Z"/>
+                        </svg>
+                    </div>
+                    <h3>Rezervări și ticketing</h3>
+                    <p>Sistemele de rezervare, emiterea biletelor de avion, rezervarea hotelurilor și serviciilor turistice.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75M12,15C13.5,15 16,15.75 16,17.25V18H8V17.25C8,15.75 10.5,15 12,15Z"/>
+                        </svg>
+                    </div>
+                    <h3>Tehnici de vânzare</h3>
+                    <p>Strategii de vânzare eficiente, comunicare cu clienții și încheierea tranzacțiilor în turism.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15,9H9V5H15M12,19.2L13.5,18.45C17.1,16.8 19,15.1 19,13.1C19,11.6 17.8,10.4 16.3,10.4C15.3,10.4 14.4,10.9 14,11.7C13.6,10.9 12.7,10.4 11.7,10.4C10.2,10.4 9,11.6 9,13.1C9,15.1 10.9,16.8 14.5,18.45M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4A2,2 0 0,0 20,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Prezentarea destinațiilor</h3>
+                    <p>Tehnici de prezentare atractivă a destinațiilor turistice și crearea de experiențe memorabile.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M7,19A1,1 0 0,0 6,20A1,1 0 0,0 7,21A1,1 0 0,0 8,20A1,1 0 0,0 7,19M15,19A1,1 0 0,0 14,20A1,1 0 0,0 15,21A1,1 0 0,0 16,20A1,1 0 0,0 15,19Z"/>
+                        </svg>
+                    </div>
+                    <h3>Pachete turistice</h3>
+                    <p>Crearea și personalizarea pachetelor turistice, calculul prețurilor și optimizarea ofertelor.</p>
+                </div>
+                
+                <div class="curriculum-item">
+                    <div class="curriculum-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,3H7V5H5V10A2,2 0 0,0 7,12H10V10A2,2 0 0,0 8,8V3A2,2 0 0,1 10,1H14A2,2 0 0,1 16,3V5H14V3H10V5H16V10A2,2 0 0,1 14,12H11V10A2,2 0 0,1 13,8V5A2,2 0 0,0 11,3H5M7,13A2,2 0 0,0 5,15V20A2,2 0 0,0 7,22H17A2,2 0 0,0 19,20V15A2,2 0 0,0 17,13H7M7,15H17V20H7V15Z"/>
+                        </svg>
+                    </div>
+                    <h3>Contabilitate și engleză</h3>
+                    <p>Principii de contabilitate pentru turism și comunicare în limba engleză pentru clienți internaționali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements section">
+        <div class="container">
+            <div class="requirements-content">
+                <h2>Cerințe de participare</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                        </svg>
+                        <div>
+                            <h3>Vârsta minimă</h3>
+                            <p>18 ani împliniți</p>
+                        </div>
+                    </div>
+                    
+                    <div class="requirement-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10A8,8 0 0,0 14,2M14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4A6,6 0 0,1 20,10A6,6 0 0,1 14,16M14,6A4,4 0 0,0 10,10A4,4 0 0,0 14,14A4,4 0 0,0 18,10A4,4 0 0,0 14,6M14,12A2,2 0 0,1 12,10A2,2 0 0,1 14,8A2,2 0 0,1 16,10A2,2 0 0,1 14,12Z"/>
+                        </svg>
+                        <div>
+                            <h3>Educație</h3>
+                            <p>Minim școala generală (8 clase) finalizată</p>
+                        </div>
+                    </div>
+                    
+                    <div class="requirement-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9,11H15L13.5,7.5L12,10.5L10.5,7.5L9,11M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,20C16.42,20 20,16.42 20,12C20,7.58 16.42,4 12,4C7.58,4 4,7.58 4,12C4,16.42 7.58,20 12,20Z"/>
+                        </svg>
+                        <div>
+                            <h3>Aptitudini</h3>
+                            <p>Comunicare excelentă și orientare către client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-info">
+                    <h3>Certificarea</h3>
+                    <p>
+                        La finalizarea cu succes a cursului, participanții vor primi <strong>certificat de calificare profesională</strong> 
+                        cu recunoaștere națională, autorizat de Ministerul Educației și Ministerul Muncii. 
+                        Acest certificat te califică să lucrezi ca agent de turism în orice agenție sau să îți deschizi propria afacere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final section">
+        <div class="container">
+            <div class="cta-final-content">
+                <h2>Începe-ți cariera în turism astăzi!</h2>
+                <p>
+                    Nu lăsa să treacă această oportunitate. Înscrie-te la cursul de Agent de turism 
+                    și transformă-ți pasiunea pentru călătorii într-o profesie de succes.
+                </p>
+                
+                <div class="cta-actions">
+                    <button class="btn btn-secondary btn-lg" onclick="openInscriereModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                        Înscrie-te la curs
+                    </button>
+                    <a href="../contact.html" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                        </svg>
+                        Sună pentru detalii
+                    </a>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <span class="trust-number">20+</span>
+                        <span class="trust-label">Ani experiență</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-number">1000+</span>
+                        <span class="trust-label">Absolvenți</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-number">95%</span>
+                        <span class="trust-label">Rata promovare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="../../assets/images/cursuri/logojinfotraining.png" alt="J'Info Training Logo" class="footer-logo">
+                <p class="footer-text">
+                    Centru de formare profesională în domeniul turismului cu peste 20 de ani de experiență. 
+                    Cursuri autorizate cu certificate recunoscute la nivel național.
+                </p>
+                
+                <div class="footer-partners">
+                    <a href="http://www.anc.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="ANC - Autoritatea Națională pentru Calificări">
+                        <img src="../../assets/images/cursuri/ANC.avif" alt="ANC Logo" class="partner-logo">
+                    </a>
+                    <a href="https://www.edu.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Educației">
+                        <img src="../../assets/images/cursuri/MEN_2.avif" alt="Ministerul Educației Logo" class="partner-logo">
+                    </a>
+                    <a href="https://www.mmuncii.ro/" target="_blank" rel="noopener" class="partner-link" title="Ministerul Muncii și Justiției Sociale">
+                        <img src="../../assets/images/cursuri/MMJS_1.avif" alt="Ministerul Muncii Logo" class="partner-logo">
+                    </a>
+                    <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener" class="partner-link" title="ANPC SOL">
+                       <img src="../../assets/images/cursuri/anpcsol.avif" alt="ANPC SOL Logo" class="partner-logo">
+                   </a>
+                   <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener" class="partner-link" title="ANPC SAL">
+                       <img src="../../assets/images/cursuri/anpcsal.avif" alt="ANPC SAL Logo" class="partner-logo">
+                   </a>
+               </div>
+           </div>
+           
+           <div class="footer-bottom">
+               <p>&copy; 2025 J'Info Training. Toate drepturile rezervate. | Dezvoltat cu ❤️ pentru educația în turism</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../../js/main.js"></script>
+   <script src="../../js/forms.js"></script>
+   
+   <!-- Course Page Specific Scripts -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           initCoursePageFunctionality();
+       });
+
+       function initCoursePageFunctionality() {
+           // Smooth scroll for hero CTA
+           const heroActions = document.querySelectorAll('.course-hero-actions .btn');
+           heroActions.forEach(btn => {
+               if (btn.onclick) return; // Skip if already has onclick
+               
+               btn.addEventListener('click', function(e) {
+                   if (this.textContent.includes('Înscrie-te')) {
+                       e.preventDefault();
+                       openInscriereModal();
+                   }
+               });
+           });
+           
+           // Back to courses smooth scroll
+           const backBtn = document.querySelector('.back-to-courses');
+           if (backBtn) {
+               backBtn.addEventListener('click', function(e) {
+                   // Let normal navigation work
+                   // Could add analytics here
+               });
+           }
+       }
+
+       function openInscriereModal() {
+           // Create modal if it doesn't exist
+           let modal = document.getElementById('course-inscriere-modal');
+           if (!modal) {
+               modal = createCourseInscriereModal();
+               document.body.appendChild(modal);
+           }
+
+           // Pre-select Agent de turism
+           const courseSelect = modal.querySelector('select[name="curs"]');
+           if (courseSelect) {
+               courseSelect.value = 'agent-turism';
+               // Trigger change event to update price
+               courseSelect.dispatchEvent(new Event('change'));
+           }
+
+           // Show modal
+           modal.style.display = 'flex';
+           document.body.style.overflow = 'hidden';
+       }
+
+       function createCourseInscriereModal() {
+           const modal = document.createElement('div');
+           modal.id = 'course-inscriere-modal';
+           modal.className = 'modal';
+           modal.innerHTML = `
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h3>Înscriere - Agent de turism</h3>
+                       <button class="modal-close" data-close="course-inscriere-modal">&times;</button>
+                   </div>
+                   <div class="modal-body">
+                       <form id="course-inscriere-form">
+                           <div class="form-group">
+                               <label for="curs-nume">Nume complet *</label>
+                               <input type="text" id="curs-nume" name="nume" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-email">Email *</label>
+                               <input type="email" id="curs-email" name="email" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-telefon">Telefon *</label>
+                               <input type="tel" id="curs-telefon" name="telefon" required>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-selectat">Cursul selectat *</label>
+                               <select id="curs-selectat" name="curs" required>
+                                   <option value="">Alege cursul...</option>
+                                   <option value="agent-turism" selected>Agent de turism (2.150 lei)</option>
+                                   <option value="ghid-turism">Ghid de turism (2.150 lei)</option>
+                                   <option value="ghid-national-touroperator">Ghid național touroperator (1.700 lei)</option>
+                                   <option value="director-agentie-turism">Director de Agenție de turism (2.850 lei)</option>
+                                   <option value="director-hotel">Director de hotel (2.850 lei)</option>
+                                   <option value="administrator-pensiune-turistica">Administrator de Pensiune Turistică (1.700 lei)</option>
+                                   <option value="formator-autorizat">Formator autorizat (1.350 lei)</option>
+                               </select>
+                               <div id="course-price-display" style="display: block; margin-top: 0.5rem; color: var(--primary-orange); font-weight: 600;">Preț: 2.150 Lei</div>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-data">Data preferată de începere</label>
+                               <select id="curs-data" name="data_preferata">
+                                   <option value="">Alege...</option>
+                                   <option value="cat-mai-repede">Cât mai repede posibil</option>
+                                   <option value="1-2-saptamani">În 1-2 săptămâni</option>
+                                   <option value="luna-viitoare">Luna viitoare</option>
+                                   <option value="peste-2-luni">Peste 2 luni</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-experienta">Nivel de experiență în turism</label>
+                               <select id="curs-experienta" name="experienta">
+                                   <option value="">Alege...</option>
+                                   <option value="fara-experienta">Fără experiență</option>
+                                   <option value="incepator">Începător</option>
+                                   <option value="intermediar">Intermediar</option>
+                                   <option value="avansat">Avansat</option>
+                               </select>
+                           </div>
+                           
+                           <div class="form-group">
+                               <label for="curs-mesaj">Mesaj (opțional)</label>
+                               <textarea id="curs-mesaj" name="mesaj" rows="3" placeholder="Întrebări despre curs, preferințe de program, etc."></textarea>
+                           </div>
+                           
+                           <div class="form-actions">
+                               <button type="submit" class="btn btn-primary">
+                                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                       <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+                                   </svg>
+                                   Trimite înscriere
+                               </button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           `;
+
+           // Add event listeners
+           const closeBtn = modal.querySelector('.modal-close');
+           closeBtn.addEventListener('click', () => closeCourseModal(modal));
+           
+           modal.addEventListener('click', (e) => {
+               if (e.target === modal) {
+                   closeCourseModal(modal);
+               }
+           });
+
+           // Add form submission handler
+           const form = modal.querySelector('#course-inscriere-form');
+           form.addEventListener('submit', handleCourseInscriereSubmit);
+
+           // Add course price update
+           const courseSelect = modal.querySelector('#curs-selectat');
+           courseSelect.addEventListener('change', updateCoursePriceDisplay);
+
+           return modal;
+       }
+
+       function closeCourseModal(modal) {
+           modal.style.display = 'none';
+           document.body.style.overflow = '';
+       }
+
+       function updateCoursePriceDisplay() {
+           const priceDisplay = document.getElementById('course-price-display');
+           const prices = {
+               'agent-turism': '2.150 Lei',
+               'ghid-turism': '2.150 Lei',
+               'ghid-national-touroperator': '1.700 Lei',
+               'director-agentie-turism': '2.850 Lei',
+               'director-hotel': '2.850 Lei',
+               'administrator-pensiune-turistica': '1.700 Lei',
+               'formator-autorizat': '1.350 Lei'
+           };
+           
+           const selectedPrice = prices[this.value];
+           if (selectedPrice) {
+               priceDisplay.textContent = `Preț: ${selectedPrice}`;
+               priceDisplay.style.display = 'block';
+           } else {
+               priceDisplay.style.display = 'none';
+           }
+       }
+
+       async function handleCourseInscriereSubmit(e) {
+           e.preventDefault();
+           
+           const form = e.target;
+           const submitBtn = form.querySelector('button[type="submit"]');
+           const originalHTML = submitBtn.innerHTML;
+           
+           try {
+               // Show loading
+               submitBtn.disabled = true;
+               submitBtn.innerHTML = `
+                   <svg class="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
+                   </svg>
+                   Se trimite...
+               `;
+               
+               // Get form data
+               const formData = new FormData(form);
+               const data = Object.fromEntries(formData.entries());
+               
+               // Send via EmailJS (replace with your actual service/template IDs)
+               await emailjs.send('service_tcy7j6c', 'template_n4vdpoi', {
+                   from_name: data.nume,
+                   from_email: data.email,
+                   phone: data.telefon,
+                   course: 'Agent de turism',
+                   data_preferata: data.data_preferata || 'Nu a specificat',
+                   experienta: data.experienta || 'Nu a specificat',
+                   message: data.mesaj || 'Înscriere din pagina Agent de turism',
+                   form_type: 'course-inscriere-agent-turism'
+               });
+               
+               // Success
+                showSuccessModal('Agent de Turism');
+               form.reset();
+               closeCourseModal(document.getElementById('course-inscriere-modal'));
+               
+           } catch (error) {
+               console.error('Course inscription error:', error);
+               alert('A apărut o eroare. Vă rugăm să încercați din nou sau să ne contactați telefonic.');
+           } finally {
+               submitBtn.disabled = false;
+               submitBtn.innerHTML = originalHTML;
+           }
+       }
+   </script>
+</body>
+</html>
