@@ -670,13 +670,14 @@ function initTawkToChat() {
 }
 
 // Configurare informații contextuale bazate pe pagină
+// Adaugă în funcția setupTawkContextualInfo() din main.js:
 function setupTawkContextualInfo() {
     if (!window.Tawk_API) return;
     
-    // Detectează tipul de pagină
     const currentPath = window.location.pathname.toLowerCase();
     let pageContext = 'general';
     
+    // Detectează pagina și setează mesaje personalizate
     if (currentPath.includes('cursuri') || currentPath.includes('ghid') || 
         currentPath.includes('agent') || currentPath.includes('director') || 
         currentPath.includes('administrator') || currentPath.includes('formator')) {
@@ -687,15 +688,23 @@ function setupTawkContextualInfo() {
         pageContext = 'contact';
     }
     
-    // Așteaptă ca Tawk.to să se încarce complet și apoi setează contextul
+    // Așteaptă încărcarea și setează comportament
     setTimeout(() => {
-        if (window.Tawk_API && typeof window.Tawk_API.addEvent === 'function') {
-            window.Tawk_API.addEvent('page_context', {
-                page_type: pageContext,
-                page_url: window.location.href,
-                page_title: document.title,
-                timestamp: new Date().toISOString()
-            });
+        if (window.Tawk_API) {
+            // Setează limba română
+            if (typeof window.Tawk_API.setLocale === 'function') {
+                window.Tawk_API.setLocale('ro');
+            }
+            
+            // Adaugă context despre pagină
+            if (typeof window.Tawk_API.addEvent === 'function') {
+                window.Tawk_API.addEvent('page_context', {
+                    page_type: pageContext,
+                    page_url: window.location.href,
+                    page_title: document.title,
+                    timestamp: new Date().toISOString()
+                });
+            }
         }
     }, 3000);
 }
@@ -748,24 +757,100 @@ const TawkHelpers = {
 };
 
 // CSS personalizat pentru Tawk.to
+// 🔧 ACTUALIZEAZĂ CSS-ul din main.js pentru a evita suprapunerea
+
 function injectTawkCustomStyles() {
     if (document.getElementById('tawk-custom-styles')) return;
     
     const styles = document.createElement('style');
     styles.id = 'tawk-custom-styles';
     styles.textContent = `
-        /* Personalizare Tawk.to pentru J'Info Training */
-        @media (max-width: 480px) {
+        /* 💬 Poziționare Tawk.to în stânga jos */
+        .tawk-chat-iframe {
+            right: auto !important;
+            left: 20px !important;
+            bottom: 20px !important;
+        }
+        
+        /* Alternative selector pentru Tawk.to */
+        iframe[src*="tawk.to"] {
+            right: auto !important;
+            left: 20px !important;
+            bottom: 20px !important;
+        }
+        
+        /* Butonul Tawk.to în stânga */
+        .tawk-min-container {
+            right: auto !important;
+            left: 20px !important;
+        }
+        
+        /* 🔝 Scroll to top rămâne în dreapta */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-orange, #ea580c);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            background: var(--primary-orange-dark, #c2410c);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* 📱 Responsive pe mobile */
+        @media (max-width: 768px) {
+            .tawk-chat-iframe,
             iframe[src*="tawk.to"] {
-                transform: scale(0.9) !important;
+                left: 10px !important;
                 bottom: 10px !important;
-                right: 10px !important;
+                transform: scale(0.9);
+            }
+            
+            .scroll-to-top {
+                right: 10px;
+                bottom: 10px;
+                width: 45px;
+                height: 45px;
             }
         }
         
-        /* Asigură-te că chat-ul nu interferează cu modalele */
+        /* Asigură-te că modalele sunt deasupra */
         .success-modal {
             z-index: 10000 !important;
+        }
+        
+        /* Stilizare suplimentară pentru chat */
+        .tawk-chat-button {
+            background: linear-gradient(135deg, #ea580c, #f97316) !important;
+            border-radius: 25px !important;
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .tawk-chat-button:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4) !important;
         }
     `;
     document.head.appendChild(styles);
