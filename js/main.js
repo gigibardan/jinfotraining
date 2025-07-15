@@ -926,74 +926,6 @@ function initCookieConsent() {
                 </button>
             </div>
         </div>
-        
-        <!-- Settings Modal -->
-        <div id="cookie-settings-modal" class="cookie-modal hidden">
-            <div class="cookie-modal-content">
-                <div class="cookie-modal-header">
-                    <h3>Setări Cookie-uri</h3>
-                    <button id="cookie-modal-close" class="cookie-close-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cookie-modal-body">
-                    <div class="cookie-category">
-                        <div class="cookie-category-header">
-                            <h4>🔒 Cookie-uri necesare</h4>
-                            <span class="cookie-required">Obligatorii</span>
-                        </div>
-                        <p>Aceste cookie-uri sunt esențiale pentru funcționarea site-ului și nu pot fi dezactivate.</p>
-                        <ul class="cookie-list">
-                            <li>Sesiunea utilizatorului</li>
-                            <li>Preferințele de limbă</li>
-                            <li>Securitatea formularelor</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="cookie-category">
-                        <div class="cookie-category-header">
-                            <h4>💬 Cookie-uri funcționale</h4>
-                            <label class="cookie-toggle">
-                                <input type="checkbox" id="functional-cookies" checked>
-                                <span class="cookie-toggle-slider"></span>
-                            </label>
-                        </div>
-                        <p>Permit funcții avansate precum chat-ul live și reținerea preferințelor.</p>
-                        <ul class="cookie-list">
-                            <li>Tawk.to chat widget</li>
-                            <li>Preferințe utilizator</li>
-                            <li>Setări de afișare</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="cookie-category">
-                        <div class="cookie-category-header">
-                            <h4>📊 Cookie-uri de analiză</h4>
-                            <label class="cookie-toggle">
-                                <input type="checkbox" id="analytics-cookies" checked>
-                                <span class="cookie-toggle-slider"></span>
-                            </label>
-                        </div>
-                        <p>Ne ajută să înțelegem cum folosiți site-ul pentru a îmbunătăți experiența.</p>
-                        <ul class="cookie-list">
-                            <li>Google Analytics</li>
-                            <li>Statistici de vizitare</li>
-                            <li>Hărți de căldură</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cookie-modal-footer">
-                    <button id="cookie-save-preferences" class="cookie-btn primary">
-                        Salvează preferințele
-                    </button>
-                    <button id="cookie-accept-all-modal" class="cookie-btn secondary">
-                        Acceptă toate
-                    </button>
-                </div>
-            </div>
-        </div>
     `;
     
     // Adaugă stilurile
@@ -1088,15 +1020,18 @@ function enableServices(type) {
 }
 
 function showCookieSettings() {
-    const modal = document.getElementById('cookie-settings-modal');
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-}
-
-function hideCookieSettings() {
-    const modal = document.getElementById('cookie-settings-modal');
-    modal.classList.add('hidden');
-    document.body.style.overflow = '';
+    let modal = document.getElementById('cookie-settings-modal');
+    
+    // Dacă modalul nu există, recreează-l
+    if (!modal) {
+        createCookieSettingsModal();
+        modal = document.getElementById('cookie-settings-modal');
+    }
+    
+    if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function hideCookieBanner() {
@@ -1105,6 +1040,116 @@ function hideCookieBanner() {
         banner.style.animation = 'slideDown 0.4s ease-out';
         setTimeout(() => banner.remove(), 400);
     }
+}
+
+function hideCookieSettings() {
+    const modal = document.getElementById('cookie-settings-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+}
+
+// Separate function to create the settings modal
+function createCookieSettingsModal() {
+    // Remove existing modal if any
+    const existingModal = document.getElementById('cookie-settings-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    const modal = document.createElement('div');
+    modal.id = 'cookie-settings-modal';
+    modal.className = 'cookie-modal hidden';
+    modal.innerHTML = `
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h3>Setări Cookie-uri</h3>
+                <button id="cookie-modal-close" class="cookie-close-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="cookie-modal-body">
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <h4>🔒 Cookie-uri necesare</h4>
+                        <span class="cookie-required">Obligatorii</span>
+                    </div>
+                    <p>Aceste cookie-uri sunt esențiale pentru funcționarea site-ului și nu pot fi dezactivate.</p>
+                    <ul class="cookie-list">
+                        <li>Sesiunea utilizatorului</li>
+                        <li>Preferințele de limbă</li>
+                        <li>Securitatea formularelor</li>
+                    </ul>
+                </div>
+                
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <h4>💬 Cookie-uri funcționale</h4>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="functional-cookies" checked>
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                    <p>Permit funcții avansate precum chat-ul live și reținerea preferințelor.</p>
+                    <ul class="cookie-list">
+                        <li>Tawk.to chat widget</li>
+                        <li>Preferințe utilizator</li>
+                        <li>Setări de afișare</li>
+                    </ul>
+                </div>
+                
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <h4>📊 Cookie-uri de analiză</h4>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="analytics-cookies" checked>
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                    <p>Ne ajută să înțelegem cum folosiți site-ul pentru a îmbunătăți experiența.</p>
+                    <ul class="cookie-list">
+                        <li>Google Analytics</li>
+                        <li>Statistici de vizitare</li>
+                        <li>Hărți de căldură</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button id="cookie-save-preferences" class="cookie-btn primary">
+                    Salvează preferințele
+                </button>
+                <button id="cookie-accept-all-modal" class="cookie-btn secondary">
+                    Acceptă toate
+                </button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add event listeners to the new modal
+    document.getElementById('cookie-modal-close').addEventListener('click', hideCookieSettings);
+    document.getElementById('cookie-save-preferences').addEventListener('click', savePreferences);
+    document.getElementById('cookie-accept-all-modal').addEventListener('click', function() {
+        acceptCookies('all');
+    });
+    
+    // Close modal on backdrop click
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            hideCookieSettings();
+        }
+    });
+    
+    // Load current preferences
+    const functionalEnabled = localStorage.getItem('functionalCookies') !== 'false';
+    const analyticsEnabled = localStorage.getItem('analyticsCookies') !== 'false';
+    
+    document.getElementById('functional-cookies').checked = functionalEnabled;
+    document.getElementById('analytics-cookies').checked = analyticsEnabled;
 }
 
 function injectCookieStyles() {
@@ -1528,7 +1573,7 @@ function injectCookieStyles() {
 
 // Add cookie consent management button (optional)
 function addCookieManagementButton() {
-    if (localStorage.getItem('cookieConsent')) {
+    if (localStorage.getItem('cookieConsent') && !document.getElementById('manage-cookies-btn')) {
         const manageCookies = document.createElement('button');
         manageCookies.id = 'manage-cookies-btn';
         manageCookies.innerHTML = '🍪 Setări Cookie-uri';
@@ -1549,15 +1594,7 @@ function addCookieManagementButton() {
         `;
         
         manageCookies.addEventListener('click', function() {
-            // Re-create banner for settings
-            if (!document.getElementById('cookie-banner')) {
-                initCookieConsent();
-                setTimeout(() => {
-                    showCookieSettings();
-                }, 100);
-            } else {
-                showCookieSettings();
-            }
+            showCookieSettings();
         });
         
         manageCookies.addEventListener('mouseenter', function() {
