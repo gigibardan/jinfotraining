@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // 🆕 Inițializează Tawk.to
     initTawkToChat();
     injectTawkCustomStyles();
+    addFooterLegalLinks();
+
+      // 🍪 Cookie Consent
+    initCookieConsent();
+    setTimeout(addCookieManagementButton, 2000);
     
     console.log('J\'Info Training - Site loaded successfully');
 });
@@ -855,6 +860,720 @@ function injectTawkCustomStyles() {
     `;
     document.head.appendChild(styles);
 }
+
+// Add footer legal links
+function addFooterLegalLinks() {
+    const footerBottoms = document.querySelectorAll('.footer-bottom p');
+    
+    footerBottoms.forEach(footerText => {
+        if (footerText.textContent.includes('Toate drepturile rezervate')) {
+            footerText.innerHTML = `
+                &copy; 2025 J'Info Training. Toate drepturile rezervate. | 
+                Dezvoltat cu ❤️ pentru educația în turism (G)
+                <br class="mobile-break">
+                <a href="/pages/politica-confidentialitate.html">Politica de confidențialitate</a> | 
+                <a href="/pages/termeni-conditii.html">Termeni și condiții</a>
+            `;
+        }
+    });
+}
+
+
+
+// 🍪 COOKIE CONSENT DIY - Adaugă în main.js după funcțiile Tawk.to
+
+// Simple Cookie Consent Banner
+function initCookieConsent() {
+    // Verifică dacă utilizatorul a dat deja consimțământul
+    if (localStorage.getItem('cookieConsent')) {
+        enableServices(localStorage.getItem('cookieConsent'));
+        return;
+    }
+    
+    // Creează banner-ul
+    const cookieBanner = document.createElement('div');
+    cookieBanner.id = 'cookie-banner';
+    cookieBanner.innerHTML = `
+        <div class="cookie-banner-content">
+            <div class="cookie-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12C21,7.03 16.97,3 12,3M12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12A7,7 0 0,1 12,5M8,12A1.5,1.5 0 0,0 9.5,10.5A1.5,1.5 0 0,0 8,9A1.5,1.5 0 0,0 6.5,10.5A1.5,1.5 0 0,0 8,12M16,12A1.5,1.5 0 0,0 17.5,10.5A1.5,1.5 0 0,0 16,9A1.5,1.5 0 0,0 14.5,10.5A1.5,1.5 0 0,0 16,12Z"/>
+                </svg>
+            </div>
+            <div class="cookie-text">
+                <h3>🍪 Respectăm confidențialitatea ta!</h3>
+                <p>Folosim cookie-uri pentru a îmbunătăți experiența ta pe site și pentru analiză. Toate cookie-urile sunt sigure și ne ajută să oferim servicii mai bune.</p>
+                <p class="cookie-links">
+                    <a href="/pages/politica-confidentialitate.html" target="_blank">Politica de confidențialitate</a> | 
+                    <a href="/pages/termeni-conditii.html" target="_blank">Termeni și condiții</a>
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button id="cookie-accept-all" class="cookie-btn primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+                    </svg>
+                    Acceptă toate
+                </button>
+                <button id="cookie-accept-necessary" class="cookie-btn secondary">
+                    Doar necesare
+                </button>
+                <button id="cookie-settings" class="cookie-btn tertiary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z"/>
+                    </svg>
+                    Setări
+                </button>
+            </div>
+        </div>
+        
+        <!-- Settings Modal -->
+        <div id="cookie-settings-modal" class="cookie-modal hidden">
+            <div class="cookie-modal-content">
+                <div class="cookie-modal-header">
+                    <h3>Setări Cookie-uri</h3>
+                    <button id="cookie-modal-close" class="cookie-close-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="cookie-modal-body">
+                    <div class="cookie-category">
+                        <div class="cookie-category-header">
+                            <h4>🔒 Cookie-uri necesare</h4>
+                            <span class="cookie-required">Obligatorii</span>
+                        </div>
+                        <p>Aceste cookie-uri sunt esențiale pentru funcționarea site-ului și nu pot fi dezactivate.</p>
+                        <ul class="cookie-list">
+                            <li>Sesiunea utilizatorului</li>
+                            <li>Preferințele de limbă</li>
+                            <li>Securitatea formularelor</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cookie-category">
+                        <div class="cookie-category-header">
+                            <h4>💬 Cookie-uri funcționale</h4>
+                            <label class="cookie-toggle">
+                                <input type="checkbox" id="functional-cookies" checked>
+                                <span class="cookie-toggle-slider"></span>
+                            </label>
+                        </div>
+                        <p>Permit funcții avansate precum chat-ul live și reținerea preferințelor.</p>
+                        <ul class="cookie-list">
+                            <li>Tawk.to chat widget</li>
+                            <li>Preferințe utilizator</li>
+                            <li>Setări de afișare</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cookie-category">
+                        <div class="cookie-category-header">
+                            <h4>📊 Cookie-uri de analiză</h4>
+                            <label class="cookie-toggle">
+                                <input type="checkbox" id="analytics-cookies" checked>
+                                <span class="cookie-toggle-slider"></span>
+                            </label>
+                        </div>
+                        <p>Ne ajută să înțelegem cum folosiți site-ul pentru a îmbunătăți experiența.</p>
+                        <ul class="cookie-list">
+                            <li>Google Analytics</li>
+                            <li>Statistici de vizitare</li>
+                            <li>Hărți de căldură</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cookie-modal-footer">
+                    <button id="cookie-save-preferences" class="cookie-btn primary">
+                        Salvează preferințele
+                    </button>
+                    <button id="cookie-accept-all-modal" class="cookie-btn secondary">
+                        Acceptă toate
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Adaugă stilurile
+    injectCookieStyles();
+    
+    // Adaugă banner-ul la pagină
+    document.body.appendChild(cookieBanner);
+    
+    // Event listeners
+    document.getElementById('cookie-accept-all').addEventListener('click', function() {
+        acceptCookies('all');
+    });
+    
+    document.getElementById('cookie-accept-necessary').addEventListener('click', function() {
+        acceptCookies('necessary');
+    });
+    
+    document.getElementById('cookie-settings').addEventListener('click', function() {
+        showCookieSettings();
+    });
+    
+    // Modal event listeners
+    document.getElementById('cookie-modal-close').addEventListener('click', hideCookieSettings);
+    document.getElementById('cookie-save-preferences').addEventListener('click', savePreferences);
+    document.getElementById('cookie-accept-all-modal').addEventListener('click', function() {
+        acceptCookies('all');
+    });
+    
+    // Close modal on backdrop click
+    document.getElementById('cookie-settings-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            hideCookieSettings();
+        }
+    });
+}
+
+function acceptCookies(type) {
+    // Salvează consimțământul
+    localStorage.setItem('cookieConsent', type);
+    localStorage.setItem('cookieConsentDate', new Date().toISOString());
+    
+    // Activează serviciile
+    enableServices(type);
+    
+    // Ascunde banner-ul
+    hideCookieBanner();
+}
+
+function savePreferences() {
+    const functional = document.getElementById('functional-cookies').checked;
+    const analytics = document.getElementById('analytics-cookies').checked;
+    
+    let consentType = 'necessary';
+    if (functional && analytics) {
+        consentType = 'all';
+    } else if (functional || analytics) {
+        consentType = 'partial';
+    }
+    
+    // Salvează preferințele detaliate
+    localStorage.setItem('cookieConsent', consentType);
+    localStorage.setItem('cookieConsentDate', new Date().toISOString());
+    localStorage.setItem('functionalCookies', functional);
+    localStorage.setItem('analyticsCookies', analytics);
+    
+    // Activează serviciile
+    enableServices(consentType);
+    
+    // Ascunde modal și banner
+    hideCookieSettings();
+    hideCookieBanner();
+}
+
+function enableServices(type) {
+    if (type === 'all' || localStorage.getItem('functionalCookies') === 'true') {
+        // Activează Tawk.to
+        if (window.TawkHelpers && typeof window.TawkHelpers.enableTracking === 'function') {
+            window.TawkHelpers.enableTracking();
+        }
+        console.log('Functional cookies enabled');
+    }
+    
+    if (type === 'all' || localStorage.getItem('analyticsCookies') === 'true') {
+        // Activează Google Analytics dacă ai
+        if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+            });
+        }
+        console.log('Analytics cookies enabled');
+    }
+}
+
+function showCookieSettings() {
+    const modal = document.getElementById('cookie-settings-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function hideCookieSettings() {
+    const modal = document.getElementById('cookie-settings-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+function hideCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+        banner.style.animation = 'slideDown 0.4s ease-out';
+        setTimeout(() => banner.remove(), 400);
+    }
+}
+
+function injectCookieStyles() {
+    if (document.getElementById('cookie-styles')) return;
+    
+    const styles = document.createElement('style');
+    styles.id = 'cookie-styles';
+    styles.textContent = `
+        /* Cookie Banner Styles */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
+            backdrop-filter: blur(12px);
+            border-top: 3px solid var(--primary-orange, #ea580c);
+            padding: 1.5rem;
+            box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.12);
+            z-index: 9999;
+            animation: slideUp 0.5s ease-out;
+        }
+        
+        .cookie-banner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .cookie-icon {
+            color: var(--primary-orange, #ea580c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(234, 88, 12, 0.1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+        .cookie-text {
+            min-width: 0;
+        }
+        
+        .cookie-text h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .cookie-text p {
+            margin: 0 0 0.75rem 0;
+            line-height: 1.6;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        
+        .cookie-links {
+            margin-top: 0.5rem;
+        }
+        
+        .cookie-links a {
+            color: var(--primary-orange, #ea580c);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .cookie-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .cookie-actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+        
+        .cookie-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        
+        .cookie-btn.primary {
+            background: var(--primary-orange, #ea580c);
+            color: white;
+        }
+        
+        .cookie-btn.primary:hover {
+            background: #c2410c;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+        }
+        
+        .cookie-btn.secondary {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .cookie-btn.secondary:hover {
+            background: #e2e8f0;
+            color: #334155;
+        }
+        
+        .cookie-btn.tertiary {
+            background: transparent;
+            color: #6b7280;
+            border: 1px solid #d1d5db;
+        }
+        
+        .cookie-btn.tertiary:hover {
+            background: #f9fafb;
+            color: #374151;
+        }
+        
+        /* Cookie Settings Modal */
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .cookie-modal.hidden {
+            display: none;
+        }
+        
+        .cookie-modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.4s ease-out;
+        }
+        
+        .cookie-modal-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+        }
+        
+        .cookie-modal-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            flex: 1;
+        }
+        
+        .cookie-close-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6b7280;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-close-btn:hover {
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .cookie-modal-body {
+            padding: 1.5rem;
+        }
+        
+        .cookie-category {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .cookie-category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .cookie-category h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .cookie-required {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .cookie-toggle {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+        
+        .cookie-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .cookie-toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #cbd5e1;
+            transition: 0.3s;
+            border-radius: 24px;
+        }
+        
+        .cookie-toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        
+        .cookie-toggle input:checked + .cookie-toggle-slider {
+            background: var(--primary-orange, #ea580c);
+        }
+        
+        .cookie-toggle input:checked + .cookie-toggle-slider:before {
+            transform: translateX(20px);
+        }
+        
+        .cookie-category p {
+            margin: 0 0 1rem 0;
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .cookie-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .cookie-list li {
+            padding: 0.5rem 0;
+            color: #475569;
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .cookie-list li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-orange, #ea580c);
+            font-weight: bold;
+        }
+        
+        .cookie-modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            background: #f8fafc;
+        }
+        
+        /* Animations */
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            #cookie-banner {
+                padding: 1rem;
+            }
+            
+            .cookie-banner-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .cookie-actions {
+                justify-content: center;
+                width: 100%;
+            }
+            
+            .cookie-btn {
+                flex: 1;
+                min-width: 120px;
+                justify-content: center;
+            }
+            
+            .cookie-modal {
+                padding: 0.5rem;
+            }
+            
+            .cookie-modal-content {
+                border-radius: 12px;
+            }
+            
+            .cookie-modal-header,
+            .cookie-modal-body,
+            .cookie-modal-footer {
+                padding: 1rem;
+            }
+            
+            .cookie-category {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .cookie-category-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .cookie-modal-footer {
+                flex-direction: column;
+            }
+            
+            .cookie-modal-footer .cookie-btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cookie-text h3 {
+                font-size: 1.1rem;
+            }
+            
+            .cookie-text p {
+                font-size: 0.9rem;
+            }
+            
+            .cookie-actions {
+                flex-direction: column;
+            }
+            
+            .cookie-btn {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    `;
+    document.head.appendChild(styles);
+}
+
+// Add cookie consent management button (optional)
+function addCookieManagementButton() {
+    if (localStorage.getItem('cookieConsent')) {
+        const manageCookies = document.createElement('button');
+        manageCookies.id = 'manage-cookies-btn';
+        manageCookies.innerHTML = '🍪 Setări Cookie-uri';
+        manageCookies.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--primary-orange, #ea580c);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            z-index: 1000;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        `;
+        
+        manageCookies.addEventListener('click', function() {
+            // Re-create banner for settings
+            if (!document.getElementById('cookie-banner')) {
+                initCookieConsent();
+                setTimeout(() => {
+                    showCookieSettings();
+                }, 100);
+            } else {
+                showCookieSettings();
+            }
+        });
+        
+        manageCookies.addEventListener('mouseenter', function() {
+            this.style.opacity = '1';
+        });
+        
+        manageCookies.addEventListener('mouseleave', function() {
+            this.style.opacity = '0.8';
+        });
+        
+        document.body.appendChild(manageCookies);
+    }
+}
+
+
+
 
 // Export for use in other files
 window.JInfoTraining = {
