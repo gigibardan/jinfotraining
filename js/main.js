@@ -881,7 +881,23 @@ function addFooterLegalLinks() {
 
 
 // 🍪 COOKIE CONSENT DIY - Adaugă în main.js după funcțiile Tawk.to
-
+// Event listeners cu delegation
+document.addEventListener('click', function(e) {
+    if (e.target && e.target.closest('#cookie-accept-all')) {
+        e.preventDefault();
+        acceptCookies('all');
+    }
+    
+    if (e.target && e.target.closest('#cookie-accept-necessary')) {
+        e.preventDefault();
+        acceptCookies('necessary');
+    }
+    
+    if (e.target && e.target.closest('#cookie-settings')) {
+        e.preventDefault();
+        showCookieSettings();
+    }
+});
 // Simple Cookie Consent Banner
 function initCookieConsent() {
     // Verifică dacă utilizatorul a dat deja consimțământul
@@ -889,7 +905,23 @@ function initCookieConsent() {
         enableServices(localStorage.getItem('cookieConsent'));
         return;
     }
+    // Event listener pentru butonul "Setări" din banner
+document.addEventListener('click', function(e) {
+    if (e.target && e.target.id === 'cookie-settings') {
+        e.preventDefault();
+        showCookieSettings();
+    }
     
+    if (e.target && e.target.id === 'cookie-accept-all') {
+        e.preventDefault();
+        acceptCookies('all');
+    }
+    
+    if (e.target && e.target.id === 'cookie-accept-necessary') {
+        e.preventDefault();
+        acceptCookies('necessary');
+    }
+});
     // Creează banner-ul
     const cookieBanner = document.createElement('div');
     cookieBanner.id = 'cookie-banner';
